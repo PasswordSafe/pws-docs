@@ -1,0 +1,38 @@
+name: Build and deploy to gh-pages
+
+on:
+  push:
+    branches: [master, main]
+  release:
+    types:
+      - released
+
+  # Allow to run this workflow manually
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install --no-cache-dir --upgrade -r requirements.txt
+
+      - run: mkdocs build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: site # The folder the action should deploy.

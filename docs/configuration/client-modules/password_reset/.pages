@@ -1,0 +1,9 @@
+nav:
+    - index.md
+    - requirements.md
+    - configuration.md
+    - password_safe_scripts.md
+    - user_defined_scripts.md
+    - heartbeat.md
+    - rollback.md
+    - Logbook entries under Password Reset: logbook_entries_password_reset.md

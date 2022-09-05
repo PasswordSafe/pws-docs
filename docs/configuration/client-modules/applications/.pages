@@ -1,0 +1,6 @@
+nav:
+    - index.md
+    - learning_the_applications
+    - RDP and SSH Applications: rdp_and_ssh_applications
+    - configuration_of_saml.md
+    - example_applications

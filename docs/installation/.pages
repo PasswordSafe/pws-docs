@@ -1,0 +1,7 @@
+nav:
+    - index.md
+    - requirements
+    - server.md
+    - client.md
+    - webclient
+    - browser

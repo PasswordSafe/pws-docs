@@ -1,0 +1,4 @@
+nav:
+    - index.md
+    - yubico_yubikey.md
+    - otp.md

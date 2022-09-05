@@ -1,0 +1,8 @@
+nav:
+    - index.md
+    - managing_users
+    - permissions_for_organizational_structures
+    - active_directory_link
+    - azure_ad_connection.md
+    - first_factor.md
+    - multifactor_authentication

@@ -1,0 +1,12 @@
+nav:
+    - index.md
+    - passwords
+    - documents.md
+    - notifications.md
+    - organizational_structures
+    - roles.md
+    - forms
+    - logbook.md
+    - applications
+    - password_reset
+    - discovery_service

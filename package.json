@@ -1,0 +1,11 @@
+{
+  "name": "pws-docs",
+  "description": "Password Safe documentation",
+  "author": "MATESO GmbH - Tobias Nessel",
+  "scripts": {
+    "lint": "markdownlint --config .markdownlint.yml ."
+  },
+  "dependencies": {
+    "markdownlint-cli": "^0.32.2"
+  }
+}

@@ -1,0 +1,30 @@
+# Define macros here
+# You can use them like that in your markdown file:
+# {{about.company}}
+#
+# For more syntax or information visit:
+# https://mkdocs-macros-plugin.readthedocs.io/
+
+about:
+  company: MATESO GmbH
+  product: Password Safe
+
+url:
+  website: https://www.passwordsafe.com/
+  newsletter: https://www.passwordsafe.com/en/newsletter-registration/
+  customer_portal: https://license.passwordsafe.de/kis
+  support: https://www.passwordsafe.com/en/support/
+  pricing: https://www.passwordsafe.com/en/pricing/
+  feature_matrix: https://www.passwordsafe.com/en/pricing-feature-matrix/
+  wikipedia_scim: https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management
+  openid_connect: https://openid.net/connect/
+  azure_portal: https://portal.azure.com/
+  webview2: https://developer.microsoft.com/de-de/microsoft-edge/webview2/#download-section
+  azure_provisioning_agent_info: https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/on-premises-scim-provisioning#on-premises-app-provisioning-to-scim-enabled-apps
+  azure_provisioning_agent_download: https://aka.ms/OnPremProvisioningAgent
+  sdk: https://help.passwordsafe.de/api/v8/
+  placeholder: /placeholder_link
+  addon_edge: https://microsoftedge.microsoft.com/addons/detail/ahdfobpkkckhdhbmnpjehdkepaddfhek
+  addon_firefox: https://mateso.co/PS8ADDONFIREFOX
+  addon_chrome: https://chrome.google.com/webstore/detail/password-safe/bpjfchmapbmjeklgmlkabfepflgfckip
+  addon_safari: https://mateso.co/PS8ADDONSAFARI

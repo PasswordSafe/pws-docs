@@ -1,0 +1,27 @@
+name: Run PR through markdown-lint
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review, review_requested]
+
+  # Allow to run this workflow manually
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: lint all markdown files
+        uses: actions/setup-node@master
+      - run: |
+          npm ci
+          npm run lint

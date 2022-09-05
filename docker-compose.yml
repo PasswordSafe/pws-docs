@@ -1,0 +1,20 @@
+# Docker Compose file for MATESO Password Safe documentation
+#
+# Install Docker on your system to run and test the documentation.
+#
+# Note: This file is intended for testing and does not
+# implement best practices for a production deployment!
+#
+# Learn more: https://docs.docker.com/compose/reference/
+
+version: '3.7'
+
+services:
+  pws-docs:
+    build:
+      context: .
+    image: squidfunk/mkdocs-material
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./:/docs

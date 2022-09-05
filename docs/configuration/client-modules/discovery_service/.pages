@@ -1,0 +1,9 @@
+nav:
+    - index.md
+    - requirements.md
+    - configuration.md
+    - discovered_entries.md
+    - converting_entries.md
+    - created_passwords.md
+    - deleting_entries.md
+    - logbook.md
