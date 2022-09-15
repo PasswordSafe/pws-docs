@@ -60,4 +60,4 @@ This is generally a very common scenario. Nevertheless, it should be noted that 
 Alternatively, it is possible to connect several records with one RDP connection.
 In this way, you can combine different users with an RDP connection and register them straightforward.
 
-![picture connect several accounts to applications](/assets/en/client_modules/applications/applications_9.png){ loading=lazy }
+![picture connect several accounts to applications](/assets/en/client_modules/applications/applications_9.jpg){ loading=lazy }

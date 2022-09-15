@@ -17,7 +17,7 @@ In the previous section, it was clarified that permissions are granted either di
 !!! note
     The icon on the right of the reading pane shows the information whether the record is personal or public. In case of personal data records, the user that is logged on is the only one who has permissions!
 
-The author is created with all permissions for the record. As described in the [Permission Concept](/configuration/permissionconcept/), you can now add roles and users. 'Right click - Add' inside the userlist or use the ribbon "User and roles" to add a user. The filter helps you to quickly find those users who should be granted permissions for the record in just a few steps.
+The author is created with all permissions for the record. As described in the [Permission Concept](/configuration/permission_concept/), you can now add roles and users. 'Right click - Add' inside the userlist or use the ribbon "User and roles" to add a user. The filter helps you to quickly find those users who should be granted permissions for the record in just a few steps.
 
 ![add user and role menu](/assets/en/permission/manual-setting-of-permissions/manual-setting-of-permissions-2.png){ loading=lazy }
 

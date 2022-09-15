@@ -12,7 +12,7 @@ First you are required to read and accept the license terms. These can also be p
 
 The next step is to define the location. The suggested location can be retained.
 
-If you want to use {{about.product}} as an identity provider [SAML Service](/saml){target=_blank} must be selected. Otherwise, it will not be installed.
+If you want to use {{about.product}} as an identity provider [SAML Service](/configuration/client-modules/applications/configuration_of_saml/) must be selected. Otherwise, it will not be installed.
 
 ![installation-wizard-3](/assets/en/installation/adminclient/installation-admin-client-3-en.png){loading=lazy}
 
