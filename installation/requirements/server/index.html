@@ -1381,13 +1381,11 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the Password Safe server is to be used to create databases, the user needs dbCreator rights. Alternatively, the databases can be created directly by the SQL server. The Password Safe server will manage them. In this case, dbOwner rights are sufficient. See <a href="/Installation/System%20requirements/MSSQL/#permissions">MSSQL requirements</a></p>
+<p>If the Password Safe server is to be used to create databases, the user needs <code>dbCreator</code> rights. Alternatively, the databases can be created directly by the SQL server. The Password Safe server will manage them. In this case, <code>dbOwner</code> rights are sufficient. See <a href="/installation/requirements/mssql/#permissions">MSSQL requirements</a></p>
 </div>
 <h4 id="configuration-examples">Configuration examples<a class="headerlink" href="#configuration-examples" title="Permanent link">⚓︎</a></h4>
-<p>Option 1:<br/>
-<strong>A service user</strong> is created in the AD. It will be added as a service user, which can start both the Password Safe server service and the backup service. This user requires rights to start services. This user is then used for the SQL configuration instance (by activating the check box).</p>
-<p>Option 2:<br/>
-<strong>A local user</strong> is used as a service user. Specify a local SQL user, secured with a password, as a user for the SQL configuration instance. This could be the default sa user, for example.</p>
+<p>Option 1: <strong>A service user</strong> is created in the AD. It will be added as a service user, which can start both the Password Safe server service and the backup service. This user requires rights to start services. This user is then used for the SQL configuration instance (by activating the check box).</p>
+<p>Option 2: <strong>A local user</strong> is used as a service user. Specify a local SQL user, secured with a password, as a user for the SQL configuration instance. This could be the default sa user, for example.</p>
 <div class="admonition danger">
 <p class="admonition-title">Be aware</p>
 <p>It is not possible to combine local system and service users for the SQL configuration instance!</p>
@@ -1406,7 +1404,7 @@
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-05T16:05:44+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-05</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-15T15:56:36+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-15</span>
 <br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-05T16:05:44+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-05</span>
