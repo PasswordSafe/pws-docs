@@ -129,7 +129,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../movingserver/">
+<a class="md-tabs__link md-tabs__link--active" href="./">
         Maintenance
       </a>
 </li>
@@ -1075,11 +1075,6 @@
           Maintenance
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../movingserver/">
-        Moving the server
-      </a>
-</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1160,6 +1155,11 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../move_server/">
+        Moving the server
+      </a>
 </li>
 </ul>
 </nav>
@@ -1345,11 +1345,11 @@
 <p>Please always check the Changelog for requirements or breaking changes before updating!</p>
 </div>
 <h3 id="check-the-software-maintenance-package">Check the software maintenance package<a class="headerlink" href="#check-the-software-maintenance-package" title="Permanent link">⚓︎</a></h3>
-<p>The right to install updates is acquired with the software maintenance package. It is important to note that you are permitted to install all updates as long as the software maintenance package is still active. If the software maintenance package has expired, you are only permitted to use those versions that were released during the term of the software maintenance package. Therefore, you should check whether the software maintenance package is still active before an update. This can be easily checked on the AdminClient under <a href="/faq/licensing#settings" target="_blank">License settings</a>.</p>
+<p>The right to install updates is acquired with the software maintenance package. It is important to note that you are permitted to install all updates as long as the software maintenance package is still active. If the software maintenance package has expired, you are only permitted to use those versions that were released during the term of the software maintenance package. Therefore, you should check whether the software maintenance package is still active before an update. This can be easily checked on the AdminClient under <a href="/placeholder_link">License settings</a>.</p>
 <h3 id="creating-a-backup">Creating a backup<a class="headerlink" href="#creating-a-backup" title="Permanent link">⚓︎</a></h3>
-<p>An update always involves making a profound change to the existing software. A corresponding <a href="/faq/backup" target="_blank">Backup</a> should thus be created directly before the update to ensure that no data is lost if a serious problem arises.</p>
+<p>An update always involves making a profound change to the existing software. A corresponding <a href="/placeholder_link">Backup</a> should thus be created directly before the update to ensure that no data is lost if a serious problem arises.</p>
 <h3 id="checking-compatibility">Checking compatibility<a class="headerlink" href="#checking-compatibility" title="Permanent link">⚓︎</a></h3>
-<p>An attempt is always made to design the AdminClient so that it is backwards compatible. Unfortunately this is not always possible. Therefore, you should always check which client version the AdminClient is compatible with before an update. The <a href="/faq/changelogs" target="_blank">version history</a> for the relevant version will provide this information.</p>
+<p>An attempt is always made to design the AdminClient so that it is backwards compatible. Unfortunately this is not always possible. Therefore, you should always check which client version the AdminClient is compatible with before an update. The <a href="/changelog">version history</a> for the relevant version will provide this information.</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>If the password for logging in to the AdminClient on the database has been saved, it is essential that it is noted down or temporarily saved elsewhere before an update!</p>
@@ -1364,27 +1364,27 @@ Please simply use the access data that we sent to you by email to log in.</p>
 <p class="admonition-title">Hint</p>
 <p>If the service has not been ended in advance, the installation wizard will give you the opportunity to do so. If the service is still not ended at this stage, the computer will then need to be restarted. It is thus recommended that the Password Safe services are ended before the update.</p>
 </div>
-<p>Further information on the installation wizard can be found in the section <a href="/faq/installAdminClient" target="_blank">Installation of the AdminClient</a>.</p>
+<p>Further information on the installation wizard can be found in the section <a href="/installation/server/">Installation of the AdminClient</a>.</p>
 <h3 id="patch-level-update-for-the-databases">Patch level update for the databases<a class="headerlink" href="#patch-level-update-for-the-databases" title="Permanent link">⚓︎</a></h3>
 <p>The databases are usually deactivated after updating the AdminClient because they do not yet have the corresponding patch level. This should be immediately checked. After logging in to the AdminClient, the module “Databases” is immediately visible. If the databases have been deactivated, you can reactivate them directly in the ribbon via the corresponding button. The patch level will be updated during this process.</p>
 <h3 id="updating-the-client">Updating the client<a class="headerlink" href="#updating-the-client" title="Permanent link">⚓︎</a></h3>
 <p>The updates for the client are also simply installed over the existing installation. Further information can be found in the section Installation of the client. Naturally, the update can also be carried out using the installation parameters.</p>
 <h3 id="updating-the-webclient">Updating the WebClient<a class="headerlink" href="#updating-the-webclient" title="Permanent link">⚓︎</a></h3>
-<p>The application server must firstly be updated. A new <a href="/faq/installWebClient" target="_blank">WebClient</a> is then created according to the instructions for the web server being used. The document directory on the web server should now be completely emptied. The WebClient is then unzipped and copied to the document directory on the corresponding web server.</p>
+<p>The application server must firstly be updated. A new <a href="/installation/webclient/">WebClient</a> is then created according to the instructions for the web server being used. The document directory on the web server should now be completely emptied. The WebClient is then unzipped and copied to the document directory on the corresponding web server.</p>
 <div class="admonition danger">
 <p class="admonition-title">Be aware</p>
 <p>If the WebClient is being operated on an IIS web server, a new config.bat is generated for creating the new version. This must not be executed if the WebClient has already been installed and it must be deleted without fail after a successful update.</p>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>If the WebClient is used, the module: proxy_wstunnel must be installed when using Apache. With IIS the WebSocket Protocol becomes necessary. Further information can be found in the chapter System requirements for WebClient. This applies to version 8.5.0.14896 or newer.</p>
+<p>If the WebClient is used, the module: <code>proxy_wstunnel</code> must be installed when using Apache. With IIS the <code>WebSocket Protocol</code> becomes necessary. Further information can be found in the chapter <a href="/installation/requirements/webserver/">System requirements</a> for WebClient. This applies to version 8.5.0.14896 or newer.</p>
 </div>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-05T16:05:44+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-05</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-15T15:40:22+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-15</span>
 <br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-05T16:05:44+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-05</span>
@@ -1438,7 +1438,7 @@ Please simply use the access data that we sent to you by email to log in.</p>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Moving the server" class="md-footer__link md-footer__link--prev" href="../movingserver/" rel="prev">
+<a aria-label="Previous: Login" class="md-footer__link md-footer__link--prev" href="../../configuration/sdk/examples/login/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -1447,17 +1447,17 @@ Please simply use the access data that we sent to you by email to log in.</p>
 <span class="md-footer__direction">
                 Previous
               </span>
-              Moving the server
+              Login
             </div>
 </div>
 </a>
-<a aria-label="Next: Security" class="md-footer__link md-footer__link--next" href="../../faq/security/" rel="next">
+<a aria-label="Next: Moving the server" class="md-footer__link md-footer__link--next" href="../move_server/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Security
+              Moving the server
             </div>
 </div>
 <div class="md-footer__button md-icon">

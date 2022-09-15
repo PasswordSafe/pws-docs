@@ -129,7 +129,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../maintenance/movingserver/">
+<a class="md-tabs__link" href="../../../../maintenance/update/">
         Maintenance
       </a>
 </li>
@@ -1132,13 +1132,13 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../maintenance/movingserver/">
-        Moving the server
+<a class="md-nav__link" href="../../../../maintenance/update/">
+        Update
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../maintenance/update/">
-        Update
+<a class="md-nav__link" href="../../../../maintenance/move_server/">
+        Moving the server
       </a>
 </li>
 </ul>
@@ -1306,7 +1306,7 @@
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
-<p>The smartcard logon tries to determine whether the certificate belongs to the user to be logged on based on the applicant in the smartcard certificate. This is done using regex, the default regex “^{username}<a href="{domain}">.@\/-_:</a>$” or “^({domain})<a href="{username}">.@\/-_:</a>$” is applied to the applicant. In this case, “{username}” is replaced with the user to be registered and “{domain}” is replaced with the domain in the AD profile in the regex and if the regex query is positive, the user is registered. If the format of your applicant in your certificates is not compatible with these two regex queries, you must set a custom regex query in the Admin Client. Please note that “{username}” for username and “{domain}” for the AD domain SHOULD be present in the regex query. If the domain must be explicitly specified, it must be written in capital letters.</p>
+<p>The smartcard logon tries to determine whether the certificate belongs to the user to be logged on based on the applicant in the smartcard certificate. This is done using regex, the default regex <code>^{username}[.@\\/-_:]({domain})$</code> or <code>^({domain})[.@\\/-_:]({username})$</code> is applied to the applicant. In this case, <code>{username}</code> is replaced with the user to be registered and <code>{domain}</code> is replaced with the domain in the AD profile in the regex and if the regex query is positive, the user is registered. If the format of your applicant in your certificates is not compatible with these two regex queries, you must set a custom regex query in the Admin Client. Please note that <code>{username}</code> for username and <code>{domain}</code> for the AD domain SHOULD be present in the regex query. If the domain must be explicitly specified, it must be written in capital letters.</p>
 </div>
 <p>In addition, the smartcard certificate must of course also be valid on the server!</p>
 <h2 id="fido2-only-at-the-webclient">Fido2 (only at the WebClient)<a class="headerlink" href="#fido2-only-at-the-webclient" title="Permanent link">⚓︎</a></h2>
@@ -1326,7 +1326,7 @@
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-05T16:05:44+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-05</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-15T15:40:22+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-15</span>
 <br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-09-05T16:05:44+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-05</span>
