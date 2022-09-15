@@ -56,15 +56,13 @@ The user for the SQL configuration instance logs on to the SQL server to create 
 - SQL user: An SQL user may also be used. It is saved on the SQL server according to the configuration.
 
 !!! note
-    If the {{about.product}} server is to be used to create databases, the user needs dbCreator rights. Alternatively, the databases can be created directly by the SQL server. The {{about.product}} server will manage them. In this case, dbOwner rights are sufficient. See [MSSQL requirements](/Installation/System%20requirements/MSSQL/#permissions)
+    If the {{about.product}} server is to be used to create databases, the user needs `dbCreator` rights. Alternatively, the databases can be created directly by the SQL server. The {{about.product}} server will manage them. In this case, `dbOwner` rights are sufficient. See [MSSQL requirements](/installation/requirements/mssql/#permissions)
 
 #### Configuration examples
 
-Option 1:  
-**A service user** is created in the AD. It will be added as a service user, which can start both the {{about.product}} server service and the backup service. This user requires rights to start services. This user is then used for the SQL configuration instance (by activating the check box).
+Option 1: **A service user** is created in the AD. It will be added as a service user, which can start both the {{about.product}} server service and the backup service. This user requires rights to start services. This user is then used for the SQL configuration instance (by activating the check box).
 
-Option 2:  
-**A local user** is used as a service user. Specify a local SQL user, secured with a password, as a user for the SQL configuration instance. This could be the default sa user, for example.
+Option 2: **A local user** is used as a service user. Specify a local SQL user, secured with a password, as a user for the SQL configuration instance. This could be the default sa user, for example.
 
 !!! danger "Be aware"
     It is not possible to combine local system and service users for the SQL configuration instance!
