@@ -18,7 +18,7 @@ After the server has been installed, the [basic configuration]({{url.placeholder
 
 ### 4. Deactivating the old server
 
-The license first needs to be deactivated before it can be activated on the new server (see options under [License settings]({{url.placeholder}})). Now stop the server so that nothing more can be changed in the database.
+The license first needs to be deactivated before it can be activated on the new server (see options under [License settings]({{url.placeholder}}). Now stop the server so that nothing more can be changed in the database.
 
 ## Backing up the data
 
@@ -36,7 +36,7 @@ In order to transfer the data to the new server, a backup of the database should
 
 ### 3. Backing up the server certificate
 
-It is essential that the all available [certificates](({{url.placeholder}})) are backed up. Depending on the installation, a different number of certificates are required here.
+It is essential that the all available [certificates]({{url.placeholder}}) are backed up. Depending on the installation, a different number of certificates are required here.
 
 ## Configuring the new server
 

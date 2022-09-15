@@ -2,7 +2,7 @@
 
 ## What are predefined rights?
 
-[Setting permissions](/permission_concept/manual_setting_of_permissions/) can be carried out separately for every record. Although this method enables you to very closely control every intended permission structure, it is not really efficient. On the one hand, there is too much configuration work involved, while on the other hand, there is a danger that people who should also receive permissions to access data are forgotten. In addition, many users should not even have the right to set permissions. “Predefining rights” is a suitable method to simplify the permissions and reduce error rates by using automated processes. This page covers the configuration of predefined rights, please also refer to the sections [Working with predefined rights]({{url.placeholder}}) and their [Scope of validity]({{url.placeholder}}).
+[Setting permissions](/configuration/permission_concept/manual_setting_of_permissions/) can be carried out separately for every record. Although this method enables you to very closely control every intended permission structure, it is not really efficient. On the one hand, there is too much configuration work involved, while on the other hand, there is a danger that people who should also receive permissions to access data are forgotten. In addition, many users should not even have the right to set permissions. “Predefining rights” is a suitable method to simplify the permissions and reduce error rates by using automated processes. This page covers the configuration of predefined rights, please also refer to the sections [Working with predefined rights]({{url.placeholder}}) and their [Scope of validity]({{url.placeholder}}).
 
 ## Organizational structures as a basis
 

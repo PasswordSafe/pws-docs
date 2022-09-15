@@ -2,7 +2,7 @@
 
 ## Using predefined rights when creating passwords
 
-[After you have pre-configured the rights](/permission_concept/predefining_rights/), you can then use them to create new records. Proceed here as follows:
+[After you have pre-configured the rights](/configuration/permission_concept/predefining_rights/), you can then use them to create new records. Proceed here as follows:
 
 - Select the password module
 - “New password” via the ribbon
@@ -35,7 +35,7 @@ Other rights also exist that are, however, not separately indicated by a color. 
 
 ## Conclusion
 
-The [manual setting of permissions](/permission_concept/manual_setting_of_permissions/) enables the configuration of rights for both existing and also new records. The option of [predefining rights](/permission_concept/predefining_rights/) represents a very efficient alternative. Instead of having to separately grant permissions for every record, a “preset” is defined once for each organizational structure. Once this has been done, it is sufficient in future to merely select the organizational structure when creating a record. The permissions are then set automatically. This process is particularly advantageous for those users who should not set their permissions themselves.
+The [manual setting of permissions](/configuration/permission_concept/manual_setting_of_permissions/) enables the configuration of rights for both existing and also new records. The option of [predefining rights](/configuration/permission_concept/predefining_rights/) represents a very efficient alternative. Instead of having to separately grant permissions for every record, a “preset” is defined once for each organizational structure. Once this has been done, it is sufficient in future to merely select the organizational structure when creating a record. The permissions are then set automatically. This process is particularly advantageous for those users who should not set their permissions themselves.
 
 ![picture predefined rights diagram](/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_4.png){ loading=lazy }
 
