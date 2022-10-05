@@ -2,6 +2,7 @@ site_name: Password Safe Documentation
 site_author: MATESO GmbH
 repo_url: https://github.com/PasswordSafe/pws-docs
 repo_name: PasswordSafe/pws-docs
+edit_uri: edit/main/docs/
 
 extra:
   generator: true
