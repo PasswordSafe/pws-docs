@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Forms - Password Safe Documentation</title>
 <link href="../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1257,7 +1265,7 @@
 <h1 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">⚓︎</a></h1>
 <h2 id="what-are-forms">What are forms?<a class="headerlink" href="#what-are-forms" title="Permanent link">⚓︎</a></h2>
 <p>When creating a new data record, it is always indispensable to query all relevant data for the intended application. In this context, <strong>Forms</strong> represent templates for the information which have to be stored. The manageability of existing forms primarily ensures the completeness of the data which have to be stored. Nevertheless, their use as an effective filter criterion is not to be ignored! Forms have a lasting impact on working with Password Safe v8 and must be managed and maintained with the necessary care by the administration.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_1.png"><img alt="picture module forms" loading="lazy" src="/assets/en/client_modules/forms/forms_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_1.png"><img alt="picture module forms" loading="lazy" src="/assets/en/client_modules/forms/forms_1.png"/></a></p>
 <h2 id="relevant-rights">Relevant rights<a class="headerlink" href="#relevant-rights" title="Permanent link">⚓︎</a></h2>
 <p>The following options are required to add new forms.</p>
 <h3 id="user-right">User right<a class="headerlink" href="#user-right" title="Permanent link">⚓︎</a></h3>
@@ -1267,11 +1275,11 @@
 </ul>
 <h2 id="standard-forms">Standard forms<a class="headerlink" href="#standard-forms" title="Permanent link">⚓︎</a></h2>
 <p>Password Safe is supplied with a series of standard forms – these should generally cover all standard requirements. Naturally, it is still possible to adapt the standard forms to your individual requirements.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_2.png"><img alt="picture forms overview" loading="lazy" src="/assets/en/client_modules/forms/forms_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_2.png"><img alt="picture forms overview" loading="lazy" src="/assets/en/client_modules/forms/forms_2.png"/></a></p>
 <p>The associated preview for the form selected in <a href="/placeholder_link">list view</a> appears in the <a href="/placeholder_link">reading pane</a>. Both the field name and also the field type are visible.</p>
 <h2 id="creating-new-forms">Creating new forms<a class="headerlink" href="#creating-new-forms" title="Permanent link">⚓︎</a></h2>
 <p>The wizard for creating new forms can be started via the ribbon, the keyboard shortcut "Ctrl + N" or also the context menu that is accessed using the right mouse button. The same mechanisms can now be used to create new form fields within the wizard. Depending on the selected field type, other options are available in the <strong>field settings</strong> section. This will be clearly explained below using the example of the field type "Password". The sequence in which form fields are requested when creating new records corresponds to the sequence within the form. This can be adapted using the relevant buttons in the ribbon.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_3.png"><img alt="picture new form" loading="lazy" src="/assets/en/client_modules/forms/forms_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_3.png"><img alt="picture new form" loading="lazy" src="/assets/en/client_modules/forms/forms_3.png"/></a></p>
 <p>The following field settings thus appear for the field type "Password": "Mandatory field, reveal only with reason, check only generated passwords and password policy". These can now be defined as desired. (<strong>Note</strong>: It is possible to select <a href="/placeholder_link">password rules</a> within the field settings; they are defined as part of the options in the main menu)</p>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
@@ -1281,13 +1289,13 @@
 <p><a href="/placeholder_link">In the same way as for other objects</a> (records, roles, documents,…), permissions can also be granted for forms. On the one hand, this ensures that not everyone can edit existing forms, while on the other hand, it allows you to make forms available to selective groups. This ensures that clarity is maintained and that users are not confronted with information that is irrelevant to them. The form "Credit cards" may be relevant within the accounting department but administrators do not generally need to use it.</p>
 <h2 id="configuring-the-info-field">Configuring the info field<a class="headerlink" href="#configuring-the-info-field" title="Permanent link">⚓︎</a></h2>
 <p>Every record displays other information underneath the obligatory name of the record in list view. In the following example, the user name is also displayed in addition to the name of the password. The name of the form is displayed in between in a blue font.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_4.png"><img alt="picture password" loading="lazy" src="/assets/en/client_modules/forms/forms_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_4.png"><img alt="picture password" loading="lazy" src="/assets/en/client_modules/forms/forms_4.png"/></a></p>
 <p>The name of the record (192.168.150.236) and the form (password) cannot be adjusted – these are always displayed. The user (Administrator) that is still saved for the record is currently displayed. This can be configured in the info field for the form. It is thus possible to separately define for each form what information for a record can be directly seen in list view. In the form module, the info field is configured by opening the form which has to be edited in editing mode by double clicking on it and then pressing the *Configure info field” button in the ribbon.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_5.png"><img alt="picture configure info" loading="lazy" src="/assets/en/client_modules/forms/forms_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_5.png"><img alt="picture configure info" loading="lazy" src="/assets/en/client_modules/forms/forms_5.png"/></a></p>
 <p>This will open a separate tab that enables you to design the info section via drag &amp; drop. The fields that are available on the right can be "dragged" onto the configuration window on the left. In the following example, "Start RDP session2 will be made visible in the info section, whereby only the word "RDP" is assigned a function – namely to start the RDP manager. A preview is shown in the top section.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_6.png"><img alt="picture RDP" loading="lazy" src="/assets/en/client_modules/forms/forms_6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_6.png"><img alt="picture RDP" loading="lazy" src="/assets/en/client_modules/forms/forms_6.png"/></a></p>
 <p>The info field for the form is now updated. It is now possible to start the RDP session directly in the RDP session.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_7.png"><img alt="picture password info" loading="lazy" src="/assets/en/client_modules/forms/forms_7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_7.png"><img alt="picture password info" loading="lazy" src="/assets/en/client_modules/forms/forms_7.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>The <strong>forms module</strong> is based on the <a href="/placeholder_link">WebClient module</a> of the same name. Both modules have a different scope and design but are almost identical to use.</p>
@@ -1295,9 +1303,9 @@
 <h2 id="standard-form">Standard form<a class="headerlink" href="#standard-form" title="Permanent link">⚓︎</a></h2>
 <p>There are two possible ways to define a standard form.</p>
 <h3 id="via-the-standard-form-user-setting">Via the “standard form” user setting<a class="headerlink" href="#via-the-standard-form-user-setting" title="Permanent link">⚓︎</a></h3>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_8.png"><img alt="picture password" loading="lazy" src="/assets/en/client_modules/forms/forms_8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_8.png"><img alt="picture password" loading="lazy" src="/assets/en/client_modules/forms/forms_8.png"/></a></p>
 <h3 id="via-the-form-selection">Via the form selection<a class="headerlink" href="#via-the-form-selection" title="Permanent link">⚓︎</a></h3>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/forms_9.png"><img alt="picture password" loading="lazy" src="/assets/en/client_modules/forms/forms_9.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/forms_9.png"><img alt="picture password" loading="lazy" src="/assets/en/client_modules/forms/forms_9.png"/></a></p>
 <hr/>
 <div class="md-source-file">
 <small>
@@ -1443,5 +1451,5 @@
 <script src="../../../js/timeago.min.js"></script>
 <script src="../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

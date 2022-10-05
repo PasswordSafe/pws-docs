@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Working with predefined rights - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1248,9 +1256,9 @@
 <li>Select a form</li>
 </ul>
 <p>In the next window to appear, the organizational unit “IT” and the template group “Exchange” are selected.</p>
-<p><a class="glightbox" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_1.png"><img alt="picture predefined rights" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_1.png"><img alt="picture predefined rights" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_1.png"/></a></p>
 <p>Here is the underlying rights template as a comparison:</p>
-<p><a class="glightbox" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_2.png"><img alt="picture predefined rights example" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_2.png"><img alt="picture predefined rights example" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_2.png"/></a></p>
 <p>The relationship between them is obvious. It can be immediately seen that by selecting the organizational unit “IT” based on the rights configured in the rights template, permissions are granted for the roles “IT management” and also “Administrators”. <strong>The underlying tags “IT” and “Exchange” are also set.</strong></p>
 <h2 id="preview-of-the-permissions-to-be-set">Preview of the permissions to be set<a class="headerlink" href="#preview-of-the-permissions-to-be-set" title="Permanent link">⚓︎</a></h2>
 <p>When using rights templates, the permissions to be granted can be very quickly classified via a <strong>color table</strong>. The actual permissions can also be viewed as usual via the <a href="/placeholder_link">ribbon</a>. The following color key is used with the associated permissions:</p>
@@ -1281,10 +1289,10 @@
 </tbody>
 </table>
 <p>Other rights also exist that are, however, not separately indicated by a color. The overview in the <a href="/placeholder_link">ribbon</a> can be used to see whether the “move”, “export” and “print” rights are set or not. The permissions for the selected role/user are always displayed – in this case for the role “IT management”.</p>
-<p><a class="glightbox" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_3.png"><img alt="picture predefined rights permissions" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_3.png"><img alt="picture predefined rights permissions" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_3.png"/></a></p>
 <h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">⚓︎</a></h2>
 <p>The <a href="/configuration/permission_concept/manual_setting_of_permissions/">manual setting of permissions</a> enables the configuration of rights for both existing and also new records. The option of <a href="/configuration/permission_concept/predefining_rights/">predefining rights</a> represents a very efficient alternative. Instead of having to separately grant permissions for every record, a “preset” is defined once for each organizational structure. Once this has been done, it is sufficient in future to merely select the organizational structure when creating a record. The permissions are then set automatically. This process is particularly advantageous for those users who should not set their permissions themselves.</p>
-<p><a class="glightbox" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_4.png"><img alt="picture predefined rights diagram" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_4.png"><img alt="picture predefined rights diagram" loading="lazy" src="/assets/en/permission/predefined_rights/working_with_predefined_rights/working_with_predefined_rights_4.png"/></a></p>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
 <p>The configuration of permissions can be carried out manually or automatically as described. If you want to change previously set permissions later, this has to be done manually. Retrospectively defining rights is not possible.</p>
@@ -1434,5 +1442,5 @@
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Converting entries - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1320,7 +1328,7 @@
 <h1 id="converting-entries">Converting entries<a class="headerlink" href="#converting-entries" title="Permanent link">⚓︎</a></h1>
 <p>An important element for the <strong>Discovery Service</strong> is the <strong>Conversion Wizard</strong>. It processes the discovered <strong>entries</strong> and then creates corresponding <strong>passwords</strong> and <strong>Password Resets</strong>.</p>
 <p>The <strong>Conversion Wizard</strong> is started in the Start ribbon and it is also possible to switch here to the <strong>System Tasks</strong>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_1.png"><img alt="picture ribbon" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_1.png"><img alt="picture ribbon" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_1.png"/></a></p>
 <p>After the <strong>Discovery Service Task</strong> has been successfully executed, the entries are available in the <strong>Discovery Service</strong>. Further processing of the entries is then carried out using the <strong>Conversion Wizard</strong>.
 For processing in the <strong>Conversion Wizard</strong>, the network is scanned for the following types:</p>
 <ol>
@@ -1332,7 +1340,7 @@ For processing in the <strong>Conversion Wizard</strong>, the network is scanned
     Only those <strong>services are recorded</strong> to which at least one <strong>AD user</strong> or <strong>user account</strong> can be assigned! Only <strong>AD users</strong> and <strong>user accounts</strong> to which <strong>at least one service</strong> can be assigned are recorded.</p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">⚓︎</a></h2>
 <p>In the <strong>Discovery Service</strong> table, the user selects the entries for which he wants to add a <strong>Password Reset</strong> or <strong>password</strong>. The user then clicks on the <strong>Conversion Wizard</strong> and the <strong>Discovery Service Conversion Wizard</strong> opens for further editing.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_2.png"><img alt="picture data selection" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_2.png"><img alt="picture data selection" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_2.png"/></a></p>
 <ol>
 <li>A <strong>Discovery Service Task</strong> first needs to be selected. This determines the context in which the new data will be created (for a new <strong>Password Reset</strong>, the <strong>password for the domain administrator</strong> for the task will be used as the executing user. In addition, only those <strong>Discovery Service Task entries</strong> that are also discovered by the entered <strong>Discovery Service Task</strong> will be used for the conversion).</li>
 <li>The discovered entries will be displayed in this column with the <strong>services</strong> for which the user has been entered.</li>
@@ -1344,11 +1352,11 @@ For processing in the <strong>Conversion Wizard</strong>, the network is scanned
 <p>Logically, <strong>every root node</strong> corresponds to <strong>one user</strong> and all of its associated data (e.g. services). A <strong>Password Reset</strong> is created later for <strong>every user</strong> and its associated data.</p>
 </div>
 <p>The following image shows the options <strong>add new password</strong> or retain <strong>existing password</strong>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_3.png"><img alt="picture associated passwords" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_3.png"><img alt="picture associated passwords" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_3.png"/></a></p>
 <p>In addition, the <strong>organizational uni</strong> in which the existing password is located is displayed.</p>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">⚓︎</a></h2>
 <p>The <strong>Password Reset</strong> is configured in the <strong>Settings Ribbon</strong>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_4.png"><img alt="picture password reset setting" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_4.png"><img alt="picture password reset setting" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_4.png"/></a></p>
 <p>The <strong>settings</strong> will be described in more detail below:</p>
 <ol>
 <li>The organizational unit in which the <strong>Password Reset</strong> should be created is entered here. In addition, a template for the rights inheritance can be entered here.</li>
@@ -1365,7 +1373,7 @@ For processing in the <strong>Conversion Wizard</strong>, the network is scanned
 <p>After clicking on <strong>Finish</strong>, the <strong>Password Resets</strong> will be <strong>immediately executed</strong> and the <strong>passwords changed!</strong>. This also applies to <strong>Windows passwords!</strong></p>
 </div>
 <p>If option 1: <strong>Do you also want to add a Password Reset?</strong> is not selected, *steps 4, 5 and 6 are not displayed for configuration.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_5.png"><img alt="picture password reset option" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_5.png"><img alt="picture password reset option" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_5.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>After clicking on <strong>Finish</strong>, one or more <strong>passwords will be created</strong> but <strong>no corresponding Password Resets will be created!</strong></p>
@@ -1373,7 +1381,7 @@ For processing in the <strong>Conversion Wizard</strong>, the network is scanned
 <h2 id="assignment-active-directory-user">Assignment (Active Directory user)<a class="headerlink" href="#assignment-active-directory-user" title="Permanent link">⚓︎</a></h2>
 <p>In the <strong>Assignment (Active Directory user)</strong> Ribbon, the discovered data for the <strong>Discovery Service entries</strong> is transferred to a password form.</p>
 <p>The following images shows the <strong>Assignment (Active Directory user)</strong> Ribbon</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_6.png"><img alt="picture assignment for active directory user" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_6.png"><img alt="picture assignment for active directory user" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_6.png"/></a></p>
 <h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li>An <strong>Existing form</strong> can be selected or a <strong>New form</strong> with names can be added</li>
@@ -1381,7 +1389,7 @@ For processing in the <strong>Conversion Wizard</strong>, the network is scanned
 <li>The <strong>properties</strong> are *assigned to the form fields here</li>
 </ol>
 <h3 id="existing-form-selected">"Existing form" selected<a class="headerlink" href="#existing-form-selected" title="Permanent link">⚓︎</a></h3>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_7.png"><img alt="picture existing form" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_7.png"><img alt="picture existing form" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_7.png"/></a></p>
 <h3 id="procedure">Procedure<a class="headerlink" href="#procedure" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li>An <strong>Existing form</strong> is selected here</li>
@@ -1389,7 +1397,7 @@ For processing in the <strong>Conversion Wizard</strong>, the network is scanned
     Important assignments are <strong>Type: General</strong> and <strong>Type: Password Reset</strong>. An amendment can be carried out here</li>
 </ol>
 <h3 id="new-form-selected">"New form" selected<a class="headerlink" href="#new-form-selected" title="Permanent link">⚓︎</a></h3>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_8.png"><img alt="picture new form" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_8.png"><img alt="picture new form" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_8.png"/></a></p>
 <h3 id="converting-procedure">Converting Procedure<a class="headerlink" href="#converting-procedure" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li>A name for the <strong>New form</strong> needs to be entered here</li>
@@ -1398,7 +1406,7 @@ For processing in the <strong>Conversion Wizard</strong>, the network is scanned
 </ol>
 <h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">⚓︎</a></h3>
 <p>A brief overview of the actions that will be carried out with the added configuration is displayed in the <strong>Summary</strong> Ribbon. These actions will then be carried out if you click on <strong>Finish</strong>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_9.png"><img alt="picture summary" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_9.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_9.png"><img alt="picture summary" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_9.png"/></a></p>
 <h2 id="confirmation-prompt">Confirmation prompt<a class="headerlink" href="#confirmation-prompt" title="Permanent link">⚓︎</a></h2>
 <p>An important aspect of Password Safe V8 is the <strong>security</strong> of passwords on systems. In the <strong>Discovery Service</strong>, a <strong>security measures</strong> is thus triggered at the <strong>last step</strong> for creating <strong>Password Resets</strong>.
 If the option <strong>Execute Password Resets immediately after they are created</strong> is used in the configuration, the <strong>selected passwords</strong> are immediately changed after clicking on <strong>Finish</strong>.</p>
@@ -1414,14 +1422,14 @@ An <strong>Important note</strong> is displayed in the <strong>Summary</strong> 
 </div>
 <p>An <strong>Overview</strong> of which actions will be carried out is displayed for the user together with this note. The user can then still decide to <strong>Cancel</strong> the process.
 If you click on <strong>OK</strong>, an <strong>additional confirmation warning</strong> will be displayed.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_10.png"><img alt="picture important note" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_10.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_10.png"><img alt="picture important note" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_10.png"/></a></p>
 <p><strong>Security level 2:</strong></p>
 <p>Another <strong>confirmation prompt</strong> highlights that it is important to understand what you are about to do. It will no longer be possible to reverse the actions afterwards!</p>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
 <p><strong>Last chance to cancel the execution!</strong></p>
 </div>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_11.png"><img alt="picture security warning" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_11.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_11.png"><img alt="picture security warning" loading="lazy" src="/assets/en/client_modules/discovery_service/converting_entries/converting_entries_11.png"/></a></p>
 <p>After <strong>entering the displayed number</strong> and <strong>confirming with OK</strong>, the process is <strong>executed immediately</strong> and the <strong>Password Resets</strong> are carried out and the <strong>associated passwords changed</strong>.</p>
 <hr/>
 <div class="md-source-file">
@@ -1568,5 +1576,5 @@ If you click on <strong>OK</strong>, an <strong>additional confirmation warning<
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

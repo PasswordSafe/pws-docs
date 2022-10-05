@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Roles - Password Safe Documentation</title>
 <link href="../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1300,7 +1308,7 @@
 <h1 id="roles">Roles<a class="headerlink" href="#roles" title="Permanent link">⚓︎</a></h1>
 <h2 id="what-are-roles">What are roles?<a class="headerlink" href="#what-are-roles" title="Permanent link">⚓︎</a></h2>
 <p>Each employee in a company is ultimately a member of a department and / or part of a particular function level. These departments or groups are mapped within Password Safe using the role concept. The authorizations can be configured and inherited in a role-based manner. The <strong>Roles module</strong> should only be made available to administrators. Accordingly, it is recommended to limit the visibility of the role management. It is also possible to delegate the management of departments or separate areas completely to third parties via the role concept. The authorization concept ensures that users are only granted access to those roles to which they are entitled.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/roles/roles_1.png"><img alt="picture roles module" loading="lazy" src="/assets/en/client_modules/roles/roles_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/roles/roles_1.png"><img alt="picture roles module" loading="lazy" src="/assets/en/client_modules/roles/roles_1.png"/></a></p>
 <h2 id="relevant-rights">Relevant rights<a class="headerlink" href="#relevant-rights" title="Permanent link">⚓︎</a></h2>
 <p>The following options are required.</p>
 <h3 id="user-right">User right<a class="headerlink" href="#user-right" title="Permanent link">⚓︎</a></h3>
@@ -1310,11 +1318,11 @@
 </ul>
 <h2 id="roles-in-focus">Roles in focus<a class="headerlink" href="#roles-in-focus" title="Permanent link">⚓︎</a></h2>
 <p>The configuration of roles is the basis for the <a href="/placeholder_link">authorization concept</a>. The permissions for data could also be set at a user level. However, the use of roles can dramatically reduce the administrative workload, and it helps to keep an overview. In addition to the authorizations for data, user rights are also mapped in the best case via roles.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/roles/roles_2.png"><img alt="picture role diagram" loading="lazy" src="/assets/en/client_modules/roles/roles_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/roles/roles_2.png"><img alt="picture role diagram" loading="lazy" src="/assets/en/client_modules/roles/roles_2.png"/></a></p>
 <p>Roles are the central objects within Password Safe. They form the indispensable bridge between users and authorizations of any kind.</p>
 <h2 id="creating-and-granting-permissions-for-new-roles">Creating and granting permissions for new roles<a class="headerlink" href="#creating-and-granting-permissions-for-new-roles" title="Permanent link">⚓︎</a></h2>
 <p>If you are in the <strong>roles module</strong>, the process for creating new roles is the same as for <a href="/placeholder_link">creating new records</a>. Roles can be created via the ribbon and also via the context menu that is accessed using the right mouse button.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/roles/roles_3.png"><img alt="picture adding new role" loading="lazy" src="/assets/en/client_modules/roles/roles_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/roles/roles_3.png"><img alt="picture adding new role" loading="lazy" src="/assets/en/client_modules/roles/roles_3.png"/></a></p>
 <h2 id="planning-phase">Planning phase<a class="headerlink" href="#planning-phase" title="Permanent link">⚓︎</a></h2>
 <p>Just like the <a href="/placeholder_link">organizational structures</a>, you should also familiarize yourself with the intended role concepts. The mapping of structures present in a company is the starting point for the success of Password Safe. You should design the roles in Password Safe only once a detailed design has been drawn up, and all the requirements of all project participants have been met.</p>
 <h2 id="why-are-there-no-groups">Why are there no groups?<a class="headerlink" href="#why-are-there-no-groups" title="Permanent link">⚓︎</a></h2>
@@ -1325,7 +1333,7 @@
 </div>
 <h2 id="overview-of-members-for-a-role">Overview of members for a role<a class="headerlink" href="#overview-of-members-for-a-role" title="Permanent link">⚓︎</a></h2>
 <p>As well as being able to view the <strong>members</strong> in the permissions dialogue, a list of all members for a role is already made available in the <a href="/placeholder_link">reading pane</a>. All of the other users with permissions but without membership of the role are not taken into account.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/roles/roles_4.png"><img alt="picture roles members" loading="lazy" src="/assets/en/client_modules/roles/roles_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/roles/roles_4.png"><img alt="picture roles members" loading="lazy" src="/assets/en/client_modules/roles/roles_4.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>The roles module is based on the <a href="/placeholder_link">WebClient module</a> of the same name. Both modules have a different scope and design but are almost identical to use.</p>
@@ -1475,5 +1483,5 @@
 <script src="../../../js/timeago.min.js"></script>
 <script src="../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

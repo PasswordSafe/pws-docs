@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>User passwords / logging in to client - Password Safe Documentation</title>
 <link href="../../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1333,26 +1341,26 @@
 </ul>
 <h3 id="required-rights">Required rights<a class="headerlink" href="#required-rights" title="Permanent link">⚓︎</a></h3>
 <p>Various rights are required in order to issue or change user passwords. One prerequisite is the user right <strong>Can display organizational structure module</strong>. <strong>Read</strong> and <strong>write</strong> rights for the user are also required. Finally, membership of the user is required. Normally, the user themselves and the user who created or imported the user have the right to change their password.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_1.png"><img alt="picture password permissions" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_1.png"><img alt="picture password permissions" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_1.png"/></a></p>
 <h3 id="assigning-and-changing-passwords">Assigning and changing passwords<a class="headerlink" href="#assigning-and-changing-passwords" title="Permanent link">⚓︎</a></h3>
 <p>As already explained, local users are directly assigned their initial password when the user is created. The situation is different for users that are imported in end-to-end mode. They do not possess a password directly after the import and can thus not log in. It is thus necessary to assign passwords after the import.</p>
 <p>The passwords can be directly assigned or changed via the ribbon. Naturally, it is also possible to select multiple users if e.g. several imported users should be assigned the same password.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_2.png"><img alt="picture change password" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_2.png"><img alt="picture change password" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_2.png"/></a></p>
 <h3 id="change-password-on-next-login">Change password on next login<a class="headerlink" href="#change-password-on-next-login" title="Permanent link">⚓︎</a></h3>
 <p>Even if several users receive the same initial password, it is sensible to force them to change it to an individual password. There is a corresponding option for this purpose. In the case of <strong>local users</strong>, this can be activated during the creation of the user. In the case of <strong>users in end-to-end mode</strong>, this option is directly activated during import for security reasons. This option is automatically deactivated after the user has successfully logged in and changed the password.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_3.png"><img alt="picture change password options" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_3.png"><img alt="picture change password options" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_3.png"/></a></p>
 <h3 id="security-of-passwords">Security of passwords<a class="headerlink" href="#security-of-passwords" title="Permanent link">⚓︎</a></h3>
 <p>To guarantee that passwords are sufficiently strong, it is recommended that corresponding <a href="/placeholder_link">password rules</a> are created. It is especially important to ensure here that user names are excluded. The password rule then still needs to be defined as a <a href="/placeholder_link">user password rule</a>.</p>
 <h2 id="logging-in-to-the-database">Logging in to the database<a class="headerlink" href="#logging-in-to-the-database" title="Permanent link">⚓︎</a></h2>
 <p>The process for logging into the database differs depending on the type of user.</p>
 <h3 id="local-user">Local user<a class="headerlink" href="#local-user" title="Permanent link">⚓︎</a></h3>
 <p>Local users simply log in using their user name and the assigned password.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_4.png"><img alt="picture local user login" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_4.png"><img alt="picture local user login" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_4.png"/></a></p>
 <h2 id="ad-user">AD user<a class="headerlink" href="#ad-user" title="Permanent link">⚓︎</a></h2>
 <p>If only one domain has been configured, the users from AD can also log in with their user name and password the same as local users. If multiple domains have been configured or there is a local user with the same name, the name of the domain must be entered in front of the user name:</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_5.png"><img alt="picture ad user login" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_5.png"><img alt="picture ad user login" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_5.png"/></a></p>
 <p>The name of the domain must be entered as it is configured in the AD profile under <strong>Domains</strong>. The option <strong>Other domain names</strong> can be used to save other forms of the domain name.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_6.png"><img alt="picture user settings" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_6.png"><img alt="picture user settings" loading="lazy" src="/assets/en/client_modules/organizational_structures/managing_users/user_passwords/user_passwords_6.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>The logon to the client is automatically forwarded to the SSO Agent and other clients on the same computer. The same applies to logging on to the SSO Agent.</p>
@@ -1502,5 +1510,5 @@
 <script src="../../../../../js/timeago.min.js"></script>
 <script src="../../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

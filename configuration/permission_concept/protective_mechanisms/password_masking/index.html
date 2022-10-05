@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Password masking - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1288,7 +1296,7 @@
 <h1 id="password-masking">Password masking<a class="headerlink" href="#password-masking" title="Permanent link">⚓︎</a></h1>
 <h2 id="what-is-password-masking">What is password masking?<a class="headerlink" href="#what-is-password-masking" title="Permanent link">⚓︎</a></h2>
 <p>The safest passwords are those that you do <ins>not</ins> know. Password masking follows this approach. It prevents the password from being shown, while allowing the use of the automatic sign-on. You can apply it via the button of the same name in the ribbon.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/password_masking/password_masking_1.png"><img alt="picture button password masking" loading="lazy" src="/assets/en/permission/protective_mechanisms/password_masking/password_masking_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/password_masking/password_masking_1.png"><img alt="picture button password masking" loading="lazy" src="/assets/en/permission/protective_mechanisms/password_masking/password_masking_1.png"/></a></p>
 <h2 id="relevant-rights">Relevant rights<a class="headerlink" href="#relevant-rights" title="Permanent link">⚓︎</a></h2>
 <p>The following option is required to apply password masking.</p>
 <h3 id="user-right">User right<a class="headerlink" href="#user-right" title="Permanent link">⚓︎</a></h3>
@@ -1305,9 +1313,9 @@
 <p>The icon in the ribbon allows users with the required permissions to apply password masking following a confirmation prompt. By default, the privacy is for all those who have at least reading permission, but not the permission <strong>authorize</strong>.</p>
 <h3 id="password-masking-via-form-field-permissions">Password masking via form field permissions<a class="headerlink" href="#password-masking-via-form-field-permissions" title="Permanent link">⚓︎</a></h3>
 <p>As an alternative, you can also apply password masking via the <a href="/placeholder_link">form field permissions</a>. In the <a href="/placeholder_link">detailed view of a record</a>, there is a separate button in the ribbon for that purpose. Ensure that the password field is highlighted.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/password_masking/password_masking_2.png"><img alt="picture form field permissions" loading="lazy" src="/assets/en/permission/protective_mechanisms/password_masking/password_masking_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/password_masking/password_masking_2.png"><img alt="picture form field permissions" loading="lazy" src="/assets/en/permission/protective_mechanisms/password_masking/password_masking_2.png"/></a></p>
 <p>The special feature when setting or editing masking via the form field permissions is that you can individually select users to whom masking will be applied. In the following example, masking has been specified only for the role of “trainees”, although the “IT” role does not have the <strong>authorize permission</strong> either. In addition to the name of the role or the user, the icon symbolizes the fact that visa protection applies to trainees.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/password_masking/password_masking_3.png"><img alt="picture example password masking" loading="lazy" src="/assets/en/permission/protective_mechanisms/password_masking/password_masking_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/password_masking/password_masking_3.png"><img alt="picture example password masking" loading="lazy" src="/assets/en/permission/protective_mechanisms/password_masking/password_masking_3.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Use the icon in the ribbon to apply password masking to all users who have read permission on the record, but not the <strong>authorize permission</strong>. If you wish to specify more precisely for which users the password masking should be applied, this is also possible via the form field permissions.</p>
@@ -1465,5 +1473,5 @@
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Multiple editing of permissions - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1329,10 +1337,10 @@
 <p>Individual permissions can be added or remove via <strong>Multiple editing within list view</strong>. The existing permissions will <strong>not be overwritten</strong>.</p>
 <h2 id="selecting-the-records">Selecting the records<a class="headerlink" href="#selecting-the-records" title="Permanent link">⚓︎</a></h2>
 <p>In <a href="/placeholder_link">list view</a>, Shift or Ctrl + mouse click can be used to select multiple records. Permissions can also be granted for these records via the selection. The marked records are displayed in a different color. 6 records are marked in the following image.</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-1.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-1.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-1.png"/></a></p>
 <h2 id="dialogue-for-configuring-the-permissions">Dialogue for configuring the permissions<a class="headerlink" href="#dialogue-for-configuring-the-permissions" title="Permanent link">⚓︎</a></h2>
 <p>A new tab will be opened in the ribbon above the "Permissions" button in which the permissions can be configured. The tab will display the number of records that will be affected by the defined changes.</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-2.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-2.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-2.png"/></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>As the already granted permissions for the selected records may differ, it is not possible to display the permissions here.</p>
@@ -1347,26 +1355,26 @@
 </div>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">⚓︎</a></h2>
 <p>In the following example, Mr. Steiner receives read permissions to all selected records. In contrast, Mr. Brewery receives all permissions:</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-3.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-3.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-3.png"/></a></p>
 <p>The read permission will be removed for Mr. Steiner. As removing the read permissions means that no other permissions exist for the record, Mr. Steiner is completely removed from the permissions. The authorize, move, export and print permissions are being removed from Mr. Brewery. Assuming that he previously had all permissions, he will then have read, write and delete permissions remaining:</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-4.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-4.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-4.png"/></a></p>
 <h2 id="batch-processing-using-a-filter">Batch processing using a filter<a class="headerlink" href="#batch-processing-using-a-filter" title="Permanent link">⚓︎</a></h2>
 <p>In some cases it is necessary to edit the permissions for a very large number of records. On the one hand, a maximum limit of 1000 records exists and on the other hand, handling a very large number of records via list view is not always the best solution. The <strong>Batch processing using a filter</strong> mode has been developed for this purpose. This is directly initiated via the ribbon.</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-5.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-5.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-5.png"/></a></p>
 <p>In the subsequent dialogue, you define whether you want to expand, reduce or completely overwrite existing permissions. If you select <strong>expand or reduce</strong> at this stage, the same logic as for <strong>editing via list view</strong> is used. No permissions will thus be overwritten.</p>
 <p>In the option <strong>overwrite permissions</strong>, the existing permissions are removed and then replaced by the newly defined permissions.</p>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
 <p>It is important to proceed with great caution when overwriting permissions because this function can quickly lead to a large number of records becoming unusable.</p>
 </div>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-6.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-6.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-6.png"/></a></p>
 <p>The filter itself defines the selection criteria for the records to be edited. The currently configured filter will be used as default. The records that will be affected by the changes are also not displayed in this view. Only the number of records is displayed. In the following example, 9 passwords are being edited to add the read permission the role "Sales".</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-7.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-7.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-7.png"/></a></p>
 <h2 id="seals-and-password-masking">Seals and password masking<a class="headerlink" href="#seals-and-password-masking" title="Permanent link">⚓︎</a></h2>
 <p>Sealed or masked records cannot be edited using batch processing. If these types of passwords are selected, a dialogue will be displayed when carrying out batch processing to inquire how these records should be handled.</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-8.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-8.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-8.png"/></a></p>
 <p>It is possible to select whether the affected records are skipped or whether the seal or password masking should be removed. If the <strong>remove</strong> option is selected, the process needs to be confirmed again by entering a PIN.</p>
-<p><a class="glightbox" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-9.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-9.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-9.png"><img alt="PLACEHOLDER" loading="lazy" src="/assets/en/permission/multiple_editing-of-permissions/multiple-editing-of-permissions-9.png"/></a></p>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
 <p>The removal of seals and password masking cannot be reversed!</p>
@@ -1520,5 +1528,5 @@
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

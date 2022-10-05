@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Yubico / Yubikey - Password Safe Documentation</title>
 <link href="../../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1271,17 +1279,17 @@
 <h2 id="setting-up-multifactor-authentication">Setting up multifactor authentication<a class="headerlink" href="#setting-up-multifactor-authentication" title="Permanent link">⚓︎</a></h2>
 <h3 id="requesting-the-yubico-api-key">Requesting the Yubico API key<a class="headerlink" href="#requesting-the-yubico-api-key" title="Permanent link">⚓︎</a></h3>
 <p>An API key must be requested for configuration. For this purpose, use the following link and enter an e-mail address: <a href="https://upgrade.yubico.com/getapikey/">Yubico Website</a></p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_1.png"><img alt="yubico setup" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_1.png"><img alt="yubico setup" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_1.png"/></a></p>
 <p>Yubikey will then generate a <strong>One Time Password</strong>. The Yubikey used must only be touched in the right place.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_2.png"><img alt="yubico stick" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_2.png"><img alt="yubico stick" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_2.png"/></a></p>
 <p>The <strong>One Time Password</strong> is entered directly into the corresponding field.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_3.png"><img alt="yubico otp" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_3.png"><img alt="yubico otp" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_3.png"/></a></p>
 <p>Once the general terms and conditions have been approved, the API Key can be requested.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_4.png"><img alt="yubico api key" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_4.png"><img alt="yubico api key" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_4.png"/></a></p>
 <h3 id="configuring-the-yubikey-api">Configuring the Yubikey API<a class="headerlink" href="#configuring-the-yubikey-api" title="Permanent link">⚓︎</a></h3>
 <p>The actual setting up of the multifactor authentication is carried out on the AdminClient in the <strong>Database</strong> module. First select the required data base; then open the "Features" in the ribbon.
 The <strong>Yubico Client ID</strong> and the <strong>Yubico Secret Key</strong> must then be entered and saved.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_5.png"><img alt="yubico setting" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_5.png"><img alt="yubico setting" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_5.png"/></a></p>
 <p>The interface is now ready and can be used.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -1289,19 +1297,19 @@ The <strong>Yubico Client ID</strong> and the <strong>Yubico Secret Key</strong>
 </div>
 <h2 id="configuring-multifactor-authentication-for-users">Configuring multifactor authentication for users<a class="headerlink" href="#configuring-multifactor-authentication-for-users" title="Permanent link">⚓︎</a></h2>
 <p>Multifactor authentication can be configured in the Password Safe client. It can be done by the user themselves in <strong>Backstage</strong> in the <a href="/placeholder_link">Account</a> menu. It is also possible for the configuration to be applied to other users in the module <a href="/placeholder_link">organizational units</a>. The procedure is identical in both cases. In order to configure the Yubikey, simply select <strong>Yubico One Time Password</strong> and enter the name for the multifactor authentication.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_6.png"><img alt="yubico otp" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_6.png"><img alt="yubico otp" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_6.png"/></a></p>
 <p>And then click on save. Now click in the field for the token and create a token using the Yubikey. For <strong>Yubikey NEO</strong>, you only need to touch the touch panel. The same applies to <strong>Yubikey Nano</strong>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_7.png"><img alt="yubico stick" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_7.png"><img alt="yubico stick" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_7.png"/></a></p>
 <p>The token is entered directly into the corresponding field. The multifactor authentication is configured once you’ve clicked on save.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_8.png"><img alt="yubico token" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_8.png"><img alt="yubico token" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_8.png"/></a></p>
 <h2 id="logging-in-with-the-yubikey">Logging in with the Yubikey<a class="headerlink" href="#logging-in-with-the-yubikey" title="Permanent link">⚓︎</a></h2>
 <p>To login with Multifactor Authentication, the database is first selected and then <strong>User Name</strong> and <strong>Password</strong> are entered and confirmed.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_9.png"><img alt="login window" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_9.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_9.png"><img alt="login window" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_9.png"/></a></p>
 <p>After the first password authentication, another field for the <strong>One Time Password</strong> is displayed.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_10.png"><img alt="login mfa" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_10.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_10.png"><img alt="login mfa" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_10.png"/></a></p>
 <p>Click on the field to highlight it, and enter the <strong>One Time Password</strong> by touching the Yubikeys.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_11.png"><img alt="yubico stick" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_11.png"/></a></p>
-<p><a class="glightbox" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_12.png"><img alt="mfa token" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_12.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_11.png"><img alt="yubico stick" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_11.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_12.png"><img alt="mfa token" loading="lazy" src="/assets/en/client_modules/organizational_structures/multifactor_authentication/yubico_yubikey/yubico_yubikey_12.png"/></a></p>
 <p>The user is now logged on.</p>
 <hr/>
 <div class="md-source-file">
@@ -1448,5 +1456,5 @@ The <strong>Yubico Client ID</strong> and the <strong>Yubico Secret Key</strong>
 <script src="../../../../../js/timeago.min.js"></script>
 <script src="../../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Passwords - Password Safe Documentation</title>
 <link href="../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1248,7 +1256,7 @@
 <h1 id="passwords">Passwords<a class="headerlink" href="#passwords" title="Permanent link">⚓︎</a></h1>
 <h2 id="what-are-passwords">What are passwords?<a class="headerlink" href="#what-are-passwords" title="Permanent link">⚓︎</a></h2>
 <p>In Password Safe v8, the data record with the passwords represents the central data object. The Passwords module provides administrators and users with central access to the passwords for the purpose of handling this sensitive data that requires protection. Search filters in combination with color-highlighted tags enable very focussed work. Various approaches can be used to help apply the desired permissions to objects. Furthermore, the ergonomic structure of the module helps all users to use Password Safe in an efficient and targeted manner.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/passwords_1.png"><img alt="picture password module" loading="lazy" src="/assets/en/client_modules/passwords/passwords_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/passwords_1.png"><img alt="picture password module" loading="lazy" src="/assets/en/client_modules/passwords/passwords_1.png"/></a></p>
 <h2 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">⚓︎</a></h2>
 <p>The following user right is required for adding new passwords:</p>
 <ul>
@@ -1256,7 +1264,7 @@
 </ul>
 <h2 id="module-specific-ribbon-functions">Module-specific ribbon functions<a class="headerlink" href="#module-specific-ribbon-functions" title="Permanent link">⚓︎</a></h2>
 <p>The ribbon offers access to all possible actions relevant to the situation at all times. Especially within the "Passwords" module, the ribbon plays a key role due to the numerous module-specific functions. General information on the subject of the ribbon is available in the relevant section. The module-specific ribbon functions will be explained below.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/passwords_2.png"><img alt="picture module ribbon" loading="lazy" src="/assets/en/client_modules/passwords/passwords_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/passwords_2.png"><img alt="picture module ribbon" loading="lazy" src="/assets/en/client_modules/passwords/passwords_2.png"/></a></p>
 <h3 id="new">New<a class="headerlink" href="#new" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><strong>New password</strong>: New passwords can be added via this icon in the ribbon, via the context menu that is accessed using the right mouse button and via the shortcut (Ctrl + N). The next step is to select a suitable <a href="/placeholder_link">form</a>.</li>
@@ -1264,7 +1272,7 @@
 <li><strong>Delete</strong>: Deletes the object marked in <a href="/placeholder_link">list view</a>. A log file entry is created (see <a href="/placeholder_link">logbook</a>).</li>
 <li><strong>Reveal</strong>: The function <strong>Reveal</strong> can be used for all records that have a password field. The passwords in the reading pane will be revealed. In the example, the passwords have been revealed and can be hidden again with the <strong>Hide</strong> button.</li>
 </ul>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/passwords_3.png"><img alt="picture show password" loading="lazy" src="/assets/en/client_modules/passwords/passwords_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/passwords_3.png"><img alt="picture show password" loading="lazy" src="/assets/en/client_modules/passwords/passwords_3.png"/></a></p>
 <h3 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><strong>Notifications</strong>: Defining notifications enables a constant flow of information about any type of interaction. The issuing of notifications is carried out in the module designed for this purpose.</li>
@@ -1282,7 +1290,7 @@
 </ul>
 <h3 id="clipboard">Clipboard<a class="headerlink" href="#clipboard" title="Permanent link">⚓︎</a></h3>
 <p>The clipboard is a key element in the ribbon. This only exists in the "Passwords" module. <strong>Clicking on the desired form field for a record in the ribbon</strong> will copy it to the clipboard.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/passwords_4.png"><img alt="picture copy password" loading="lazy" src="/assets/en/client_modules/passwords/passwords_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/passwords_4.png"><img alt="picture copy password" loading="lazy" src="/assets/en/client_modules/passwords/passwords_4.png"/></a></p>
 <p>The message in the style of the "Balloon Tips" in Windows shows that the password has now been saved in the clipboard for 300 seconds. (Note: the time until the clipboard is cleared is 60 seconds by default. In the present case, this has been adjusted via the user settings.)</p>
 <h3 id="start">Start<a class="headerlink" href="#start" title="Permanent link">⚓︎</a></h3>
 <p>Conveniently working with passwords is only possible via the efficient usage of automated accesses via RDP, SSH, general Windows applications or websites. This makes it possible to dispense with (unsecure) entries via "copy &amp; paste".</p>
@@ -1294,7 +1302,7 @@
 <ul>
 <li><strong>Create external link</strong>: This option creates an external link for the record marked in list view. A number of different options can be selected:</li>
 </ul>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/passwords_5.png"><img alt="picture create external link" loading="lazy" src="/assets/en/client_modules/passwords/passwords_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/passwords_5.png"><img alt="picture create external link" loading="lazy" src="/assets/en/client_modules/passwords/passwords_5.png"/></a></p>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
 <p>If several sessions are opened on a client, an external link is always called in the first session.</p>
@@ -1455,5 +1463,5 @@
 <script src="../../../js/timeago.min.js"></script>
 <script src="../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

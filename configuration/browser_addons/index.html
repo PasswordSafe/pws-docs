@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Browser Add-ons - Password Safe Documentation</title>
 <link href="../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1246,23 +1254,23 @@
 <li>Mozilla Firefox</li>
 <li>Safari</li>
 </ul>
-<p><a class="glightbox" href="/assets/en/browser_addons/addon-connections.png"><img alt="Connection methods" loading="lazy" src="/assets/en/browser_addons/addon-connections.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/addon-connections.png"><img alt="Connection methods" loading="lazy" src="/assets/en/browser_addons/addon-connections.png"/></a></p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">⚓︎</a></h2>
 <p>Please find more information about the installation on: Installation Browser Add-ons</p>
 <h2 id="connection-via-sso-agent-or-server-mode">Connection via SSO agent or server mode<a class="headerlink" href="#connection-via-sso-agent-or-server-mode" title="Permanent link">⚓︎</a></h2>
 <p>If the installation of the add-on has been carried out, the user can now open the desired browser. A window appears in which the security of the connection is confirmed. Pairing is performed with a simple click. The add-on is authorized to request data from the SSO Agent from this point onwards. A new icon will also be displayed in the desired browser from this point onwards:</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/addon-icon.png"><img alt="Add-on icon" loading="lazy" src="/assets/en/browser_addons/addon-icon.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/addon-icon.png"><img alt="Add-on icon" loading="lazy" src="/assets/en/browser_addons/addon-icon.png"/></a></p>
 <p>If the icon is displayed as shown, it means that although the add-on has been installed, a connection has not yet been established with the SSO agent. Only after logging into the agent (via the icon in the system tray) will you receive a Windows notification about the successful login. If a connection to the agent has been established, the number of available records for the current website will be directly displayed on the icon.</p>
 <p>The following picture explains the exact procedure for connecting in detail:</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/addon-flow.jpg"><img alt="Add-on workflow" loading="lazy" src="/assets/en/browser_addons/addon-flow.jpg"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/addon-flow.jpg"><img alt="Add-on workflow" loading="lazy" src="/assets/en/browser_addons/addon-flow.jpg"/></a></p>
 <p>After successful connection, the number of data records available for the current Internet page is displayed on the icon.</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/addon-password-found.png"><img alt="Add-on record found" loading="lazy" src="/assets/en/browser_addons/addon-password-found.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/addon-password-found.png"><img alt="Add-on record found" loading="lazy" src="/assets/en/browser_addons/addon-password-found.png"/></a></p>
 <h2 id="database-profiles">Database profiles<a class="headerlink" href="#database-profiles" title="Permanent link">⚓︎</a></h2>
 <p>The server mode must know which database profile it is connected to. There are two ways of setting up a database profile:</p>
 <p>First, the database profile can be created manually. Therefore, he following information is required: IP address, WebClient URL and database name. Please note that /api is appended to the end of the IP address.</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/manual-database-profile.jpg"><img alt="Add-on manual database profile" loading="lazy" src="/assets/en/browser_addons/manual-database-profile.jpg"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/manual-database-profile.jpg"><img alt="Add-on manual database profile" loading="lazy" src="/assets/en/browser_addons/manual-database-profile.jpg"/></a></p>
 <p>It is also possible that the database profile is filled out automatically. For this, you need to log on to a database via WebClient. By clicking on the add-on in the WebClient, its profile can be taken over. Now all necessary information such as profile name, IP address, WebClient and database name are transferred.</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/adopt-database-profile.jpg"><img alt="Add-on adopt database profile" loading="lazy" src="/assets/en/browser_addons/adopt-database-profile.jpg"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/adopt-database-profile.jpg"><img alt="Add-on adopt database profile" loading="lazy" src="/assets/en/browser_addons/adopt-database-profile.jpg"/></a></p>
 <h2 id="the-server-mode-benefits">The server mode benefits<a class="headerlink" href="#the-server-mode-benefits" title="Permanent link">⚓︎</a></h2>
 <p>The server mode offers the following advantages:</p>
 <ul>
@@ -1290,15 +1298,15 @@
 <p>A record can only be used for entering data if it has a form field of type "URL".</p>
 </div>
 <p>The subscript number mentioned in the previous section is only available with active logins and therefore already says a lot about the “Number of possible entries”. For example, if the number “2” is shown, you can directly select the account you want to log in with.</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/addon-records-list.png"><img alt="Add-on record list" loading="lazy" src="/assets/en/browser_addons/addon-records-list.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/addon-records-list.png"><img alt="Add-on record list" loading="lazy" src="/assets/en/browser_addons/addon-records-list.png"/></a></p>
 <p>Previously, the prerequisite was that you had to navigate manually to the precise website via the browser that you actually wanted to use. This navigation can now also be handled by Password Safe – as described in the following section.</p>
 <h2 id="search-and-navigation">Search and navigation<a class="headerlink" href="#search-and-navigation" title="Permanent link">⚓︎</a></h2>
 <p>It is currently assumed that the user has to navigate manually to the website on which they want to automatically enter login data. This way of working is possible but is not convenient enough. The add-on can be used in a similar way to bookmarks. The search field can be used to search for the record in the database. The prerequisite is again that the record contains a URL.</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/addon-records-usage.png"><img alt="Add-on record usage" loading="lazy" src="/assets/en/browser_addons/addon-records-usage.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/addon-records-usage.png"><img alt="Add-on record usage" loading="lazy" src="/assets/en/browser_addons/addon-records-usage.png"/></a></p>
 <p>The screenshot shows that the URL and the name of the record (Wikipedia) are searched. The results for the search are displayed and can be selected using the arrow buttons or the mouse. The selected website will be opened in a separate tab.</p>
 <h2 id="several-passwords-for-one-website">Several passwords for one website<a class="headerlink" href="#several-passwords-for-one-website" title="Permanent link">⚓︎</a></h2>
 <p>If a user opens a page and multiple passwords with the autofill function are possible for this website, no entries will be made unlike in older versions. Instead, the following message appears in a pop-up:</p>
-<p><a class="glightbox" href="/assets/en/browser_addons/addon-multiple-passwords.png"><img alt="Add-on multiple entries" loading="lazy" src="/assets/en/browser_addons/addon-multiple-passwords.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/browser_addons/addon-multiple-passwords.png"><img alt="Add-on multiple entries" loading="lazy" src="/assets/en/browser_addons/addon-multiple-passwords.png"/></a></p>
 <p>However, if the autofill function is only activated for one password but multiple passwords are possible, the password with the autofill function is entered.
 If the user clicks on a record in the pop-up, this record is entered as normal (as was the case previously).</p>
 <hr/>
@@ -1446,5 +1454,5 @@ If the user clicks on a record in the pop-up, this record is entered as normal (
 <script src="../../js/timeago.min.js"></script>
 <script src="../../js/timeago_mkdocs_material.js"></script>
 <script src="../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

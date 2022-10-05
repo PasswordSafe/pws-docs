@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Creating new passwords - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1280,21 +1288,21 @@
 </ul>
 <h2 id="selecting-a-form">Selecting a form<a class="headerlink" href="#selecting-a-form" title="Permanent link">⚓︎</a></h2>
 <p>When creating a new record, it is possible to select from all the forms for which the logged-in user has the required permissions. To make the selection process as easy as possible, a preview of the form fields included in the form is shown on the right hand side.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_1.png"><img alt="picture password form" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_1.png"><img alt="picture password form" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_1.png"/></a></p>
 <p>In this example, you can see that the "Password" form marked on the left contains three form fields "Name", "User name" and "Password". Forms thus act as <strong>templates</strong> according to which their information is saved. (Management of the forms including issuing permissions and editing existing forms is covered in a <a href="/placeholder_link">separate section</a>)</p>
 <h2 id="entering-data">Entering data<a class="headerlink" href="#entering-data" title="Permanent link">⚓︎</a></h2>
 <p>The window for creating a new record always open in a separate tab. As can be seen below, the corresponding form fields for the previously selected form can now be filled. Password fields deserve special mention here because they can be handled differently based on <a href="/placeholder_link">password rules</a>. The record can be saved via the ribbon when all fields have been filled.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_2.png"><img alt="picture password view" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_2.png"><img alt="picture password view" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_2.png"/></a></p>
 <h2 id="validity-and-tags">Validity and tags<a class="headerlink" href="#validity-and-tags" title="Permanent link">⚓︎</a></h2>
 <p>Irrespective of the selected form, it is always possible to define the validity and tags for a record. Both values are optional.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_3.png"><img alt="picture password fields" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_3.png"><img alt="picture password fields" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_3.png"/></a></p>
 <ul>
 <li>The <strong>validity</strong> defines an end date until which the record is valid. This information can be evaluated e.g. in the logbook or in reports. It is thus possible to create a list of all expired passwords for a user or an authorized entity. However, it is <ins>not</ins> possible to limit the usability of expired passwords for security reasons.</li>
 <li><strong>Tags</strong> are freely definable properties of records that can be used as search criteria. This also allows thematically linked information to be grouped together.</li>
 </ul>
 <h2 id="setting-permissions-for-new-records">Setting permissions for new records<a class="headerlink" href="#setting-permissions-for-new-records" title="Permanent link">⚓︎</a></h2>
 <p>In principle, there are various approaches for setting permissions for newly created records. All of them have already been described in the <a href="/placeholder_link">Authorization concept</a> section. It is important to note here that <strong>manual setting of permissions is only possible after saving</strong> a record. Automatic permissions are set before the record is saved. In this context, the selection of the organizational structure and the permissions for a record are important aspects.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_4.png"><img alt="picture password view" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_4.png"><img alt="picture password view" loading="lazy" src="/assets/en/client_modules/passwords/creating_new_passwords/creating_new_passwords_4.png"/></a></p>
 <ul>
 <li><strong>Manual setting of permissions</strong>: If you want to manually set permissions for the record, select the organizational structure in which the record should be saved. After saving the record, the permissions can be manually amended <a href="/placeholder_link">via the permissions tab in the ribbon</a>. If you only want to create a personal record for which no other user will receive permissions, simply select your own organizational structure and conclude the process with "save" via the ribbon.</li>
 </ul>
@@ -1456,5 +1464,5 @@
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

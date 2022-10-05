@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Permission concept and protective mechanisms - Password Safe Documentation</title>
 <link href="../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1239,7 +1247,7 @@
 <h2 id="what-is-the-permission-concept">What is the permission concept?<a class="headerlink" href="#what-is-the-permission-concept" title="Permanent link">⚓︎</a></h2>
 <p>With Password Safe version 8 we provide the right solution to all conceivable demands placed on it with regards to permission management. <a href="/placeholder_link">Roles</a> are a great way to efficiently manage multiple users without losing the overview. We've created multiple methods to <a href="/placeholder_link">manually</a> or <a href="/placeholder_link">automatically</a> manage your permissions.</p>
 <p>Alongside the definition of <a href="/placeholder_link">manual</a> and <a href="/placeholder_link">automatic</a> setting of permissions, the (optional) setting of <a href="/placeholder_link">protective mechanisms</a> forms part of the authorization concept. The protective mechanisms are thus downstream of the permissions. The interrelationships between all of these elements are illustrated in the following diagram.</p>
-<p><a class="glightbox" href="/assets/en/permission/permission_concept_1.png"><img alt="explanation of the authorization concept" loading="lazy" src="/assets/en/permission/permission_concept_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/permission_concept_1.png"><img alt="explanation of the authorization concept" loading="lazy" src="/assets/en/permission/permission_concept_1.png"/></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Applying some form of permissions is <strong>obligatory</strong>.
@@ -1260,7 +1268,7 @@ Applying a protective mechanism is <strong>optional</strong>.</p>
 <li>Permission for a <strong>role</strong></li>
 </ol>
 <p>A role is technically nothing more than a summary of multiple users with the same permissions. It is, of course, a good idea to manage these roles in accordance with your company’s activities. The role “Administrators” can therefore be provided with more extensive authorizations than, for example, the role “Sales Assistance”. This role-based inheritance allows the organization to maintain the overview in a larger corporate structure as well as a simple procedure when adding new employees. Instead of having to entitle him individually, this is simply added to his role.</p>
-<p><a class="glightbox" href="/assets/en/permission/permission_concept_2.png"><img alt="example for permission types" loading="lazy" src="/assets/en/permission/permission_concept_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/permission_concept_2.png"><img alt="example for permission types" loading="lazy" src="/assets/en/permission/permission_concept_2.png"/></a></p>
 <p>It is obvious to proceed with the organization of accesses using the concept of roles as a basis and only to grant rights individually to employees in exceptional cases. The unplanned absence of personnel must also be taken into account in such concepts. Working with roles defuses such risks significantly.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1268,14 +1276,14 @@ Applying a protective mechanism is <strong>optional</strong>.</p>
 </div>
 <h3 id="2-membership-in-roles">2. Membership in roles<a class="headerlink" href="#2-membership-in-roles" title="Permanent link">⚓︎</a></h3>
 <p>The key point is membership in a role. If an employee can use the authorizations according to the roles assigned to him, <strong>he must be a member of the role</strong>. Only members see the records that have been authorized for the role.</p>
-<p><a class="glightbox" href="/assets/en/permission/permission_concept_3.png"><img alt="explanation role membership" loading="lazy" src="/assets/en/permission/permission_concept_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/permission_concept_3.png"><img alt="explanation role membership" loading="lazy" src="/assets/en/permission/permission_concept_3.png"/></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A small technical digression into the nature of the encryption can be very helpful with the basic understanding. Each role has a key pair. The first key is used to encrypt data. Access to this information is only possible with the second key. The membership in a role is equivalent to this second key.</p>
 </div>
 <h3 id="3-membership-vs-permissions-for-roles">3. Membership vs. permissions for roles<a class="headerlink" href="#3-membership-vs-permissions-for-roles" title="Permanent link">⚓︎</a></h3>
 <p>The admin user in Password Safe must pay particular attention to the interplay between users and roles. This dynamics is crucial for understanding the concept of authorization, in order to ensure maximum software adaptability to any corporate structure. The following diagram illustrates this with an example of two users.</p>
-<p><a class="glightbox" href="/assets/en/permission/permission_concept_4.png"><img alt="differences between membership and permissions" loading="lazy" src="/assets/en/permission/permission_concept_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/permission_concept_4.png"><img alt="differences between membership and permissions" loading="lazy" src="/assets/en/permission/permission_concept_4.png"/></a></p>
 <ul>
 <li><strong>User 1</strong> is a member of the role, and is therefore authorized for all records that are assigned to the role. However, it has only “read rights” for the role itself. This means, it can see the role, but cannot “Edit, move, or delete” it.</li>
 <li><strong>User 2</strong> has all rights for the role. It can add additional users to the role by means of “authorize”. The crucial point, however, is that it is not a member of the role. It cannot, therefore, see any records for which the role is authorized.</li>
@@ -1287,12 +1295,12 @@ Applying a protective mechanism is <strong>optional</strong>.</p>
 </div>
 <h2 id="specific-example-and-configuration">Specific example and configuration<a class="headerlink" href="#specific-example-and-configuration" title="Permanent link">⚓︎</a></h2>
 <p>Similar to the previous section <a href="#3-membership-vs-permissions-for-roles">Membership vs. permissions for roles</a>, the configuration of a role will be illustrated using two users. The configuration is performed in the <a href="/placeholder_link">"Roles" module</a>. By double-clicking on the role “IT-Consultants” in the <a href="/placeholder_link">list view</a>, you can open their detailed view.</p>
-<p><a class="glightbox" href="/assets/en/permission/permission_concept_5.png"><img alt="how to add membership" loading="lazy" src="/assets/en/permission/permission_concept_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/permission_concept_5.png"><img alt="how to add membership" loading="lazy" src="/assets/en/permission/permission_concept_5.png"/></a></p>
 <ul>
 <li>The user “Holste” is a member of the role and can, therefore, access those records for <a href="/placeholder_link">which the role has permissions</a>. He has the obligatory read right for the role, which is the basic requirement in order to be a member of the role. Which exact rights it has to the data record is not defined within the role! This is set out in the <a href="/placeholder_link">following section</a>.</li>
 <li>The user “Administrator” has all rights to the role, but is not a member! Thus, it cannot see any records that are authorized for the role. However, it has all rights to the role and can therefore print, assign other users to the role, and delete them.</li>
 </ul>
-<p><a class="glightbox" href="/assets/en/permission/permission_concept_6.png"><img alt="explanation of the authorization through a role" loading="lazy" src="/assets/en/permission/permission_concept_6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/permission_concept_6.png"><img alt="explanation of the authorization through a role" loading="lazy" src="/assets/en/permission/permission_concept_6.png"/></a></p>
 <p>This example clearly shows the advantages of the concept. The complete separation of administrative users from regular users brings significant advantages. Of course, one does not necessarily exclude the other. An administrator can, of course, have full access to the role and also be a member in it! The boundaries between the two often overlap, and can be freely defined in Password Safe.</p>
 <hr/>
 <div class="md-source-file">
@@ -1439,5 +1447,5 @@ Applying a protective mechanism is <strong>optional</strong>.</p>
 <script src="../../js/timeago.min.js"></script>
 <script src="../../js/timeago_mkdocs_material.js"></script>
 <script src="../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

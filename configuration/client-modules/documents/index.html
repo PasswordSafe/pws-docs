@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Documents - Password Safe Documentation</title>
 <link href="../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1272,7 +1280,7 @@
 <h1 id="documents">Documents<a class="headerlink" href="#documents" title="Permanent link">⚓︎</a></h1>
 <h2 id="what-are-documents">What are documents?<a class="headerlink" href="#what-are-documents" title="Permanent link">⚓︎</a></h2>
 <p>Security-critical data does not necessarily need to be in the form of passwords. To enable the uniform and secure storage of data other than passwords, Password Safe version 8 offers effective tools for the professional handling of sensitive documents and files. The ability to share documents with others according to their permissions gives you access to the current status of a document and helps avoid redundancies. The documents module is complemented by a sophisticated version management system, which records all versions of a document that were saved in the past and thus enables you to revert back to historical versions. The configuration of visibility is explained in a similar way to the other modules in one place..</p>
-<p><a class="glightbox" href="/assets/en/client_modules/documents/documents_1.png"><img alt="example picture module settings" loading="lazy" src="/assets/en/client_modules/documents/documents_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/documents/documents_1.png"><img alt="example picture module settings" loading="lazy" src="/assets/en/client_modules/documents/documents_1.png"/></a></p>
 <h2 id="relevant-rights">Relevant rights<a class="headerlink" href="#relevant-rights" title="Permanent link">⚓︎</a></h2>
 <p>The following option is required to add new documents.</p>
 <h2 id="user-right">User right<a class="headerlink" href="#user-right" title="Permanent link">⚓︎</a></h2>
@@ -1285,10 +1293,10 @@
 <li><strong>Creating a link</strong>: In this case, only a file that is located locally or on a network drive will be linked. The file itself is not stored in the database. Neither version management nor the traceability of changes in the history are possible.</li>
 <li><strong>Storing the document in the database</strong>: The file becomes part of the encrypted database. It is saved within the database and can be made available selectively to employees for further processing in the future based on their permissions.</li>
 </ul>
-<p><a class="glightbox" href="/assets/en/client_modules/documents/documents_2.png"><img alt="example picture module settings" loading="lazy" src="/assets/en/client_modules/documents/documents_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/documents/documents_2.png"><img alt="example picture module settings" loading="lazy" src="/assets/en/client_modules/documents/documents_2.png"/></a></p>
 <h2 id="document-selection">Document selection<a class="headerlink" href="#document-selection" title="Permanent link">⚓︎</a></h2>
 <p>When selecting the file to be uploaded, you can either browse your file system via the Explorer view or add objects by drag &amp; drop. The latter gives you the possibility to directly import several documents in one step.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/documents/documents_3.png"><img alt="example picture module settings" loading="lazy" src="/assets/en/client_modules/documents/documents_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/documents/documents_3.png"><img alt="example picture module settings" loading="lazy" src="/assets/en/client_modules/documents/documents_3.png"/></a></p>
 <h2 id="versioning">Versioning<a class="headerlink" href="#versioning" title="Permanent link">⚓︎</a></h2>
 <p>The heart of each document management system is the ability to capture and archive changes to documents or files. All versions of a document can be compared with each other and historical versions can be restored if necessary. Password Safe provides this functionality via the history in the ribbon, as well as in the footer area for ​​the detailed view of a document. This can be used in the same way as the <a href="/placeholder_link">password history</a>. The interplay between the document-specific event logbook and the history provides a complete list of all information that is relevant to the handling of sensitive data. Version management can be used to restore any historical versions of a document.</p>
 <div class="admonition hint">
@@ -1444,5 +1452,5 @@
 <script src="../../../js/timeago.min.js"></script>
 <script src="../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

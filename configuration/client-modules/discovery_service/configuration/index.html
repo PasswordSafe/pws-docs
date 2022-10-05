@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Configuration - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1280,9 +1288,9 @@
 <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">⚓︎</a></h1>
 <h2 id="the-discovery-service-module">The Discovery Service module<a class="headerlink" href="#the-discovery-service-module" title="Permanent link">⚓︎</a></h2>
 <p>When this module is opened in Password Safe, <strong>there are no entries displayed in the Discovery Service</strong> module at the beginning. The entries need to be generated using a <a href="/placeholder_link">System Task</a>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/configuration/configuration_1.png"><img alt="picture discovery" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/configuration/configuration_1.png"><img alt="picture discovery" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_1.png"/></a></p>
 <p>Once a <strong>System Task</strong> has been completed, the data discovered during the search is listed in a table:</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/configuration/configuration_2.png"><img alt="picture discovery service" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/configuration/configuration_2.png"><img alt="picture discovery service" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_2.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>The information can be grouped together using the column editor.</p>
@@ -1298,7 +1306,7 @@
 <p>To collect data for the <strong>Discovery Service</strong>, the <strong>Discovery Service Task</strong> needs to be correspondingly configured for a <strong>Network Scan</strong>.</p>
 <h3 id="general-and-overview">General and overview<a class="headerlink" href="#general-and-overview" title="Permanent link">⚓︎</a></h3>
 <p>The following image shows a newly added <strong>Discovery Service Task</strong>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/configuration/configuration_3.png"><img alt="picture discovery service task" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/configuration/configuration_3.png"><img alt="picture discovery service task" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_3.png"/></a></p>
 <ol>
 <li>Shows information about the <strong>Discovery Service Task</strong>.</li>
 <li>In the <strong>General</strong> section, the name of the <strong>Discovery Service Task</strong> is entered (optionally with a description).
@@ -1315,7 +1323,7 @@
 Multiple password field —&gt; field 1. is used.</li>
 </ol>
 <p>This section is used for special entries for the <strong>Discovery Service Task</strong>. After it has been finished, the <strong>Network Scan</strong> scans the <strong>network</strong> according to these guidelines.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/configuration/configuration_4.png"><img alt="picture discovery service task settings" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/configuration/configuration_4.png"><img alt="picture discovery service task settings" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_4.png"/></a></p>
 <ol>
 <li><strong>Password</strong> and <strong>Computer scan variants</strong>: The required password must already have been issued and it requires corresponding rights for the domain.
     Active Directory computer: Only those computers that are in Active Directory are scanned (there is also the option of using it individually or pinging the network).
@@ -1335,7 +1343,7 @@ Multiple password field —&gt; field 1. is used.</li>
 </div>
 <h2 id="interval-executing-server-tags">Interval / Executing server / Tags<a class="headerlink" href="#interval-executing-server-tags" title="Permanent link">⚓︎</a></h2>
 <p>This section is used to enter information about the start of the task and other additional information.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/discovery_service/configuration/configuration_5.png"><img alt="picture discovery service interval" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/discovery_service/configuration/configuration_5.png"><img alt="picture discovery service interval" loading="lazy" src="/assets/en/client_modules/discovery_service/configuration/configuration_5.png"/></a></p>
 <ol>
 <li><strong>Interval</strong>: The interval at which the <strong>Discovery Service Task</strong> should be executed is defined here. The default setting is hourly, one year after adding the <strong>Discovery Service Task</strong>. The interval can be adjusted in minutes or set to be executed only once (optionally with an end date).</li>
 <li><strong>Executing server (optional)</strong>: Servers with an AdminClient can be entered here that will be used to execute the Discovery Service Task if the main server crashes. The Discovery Service Task is then automatically taken over and executed by the accessible servers on the list. The list is searched from top to bottom to find an accessible server.</li>
@@ -1491,5 +1499,5 @@ Multiple password field —&gt; field 1. is used.</li>
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

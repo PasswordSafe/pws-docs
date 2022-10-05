@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Seals - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1279,31 +1287,31 @@
 </div>
 <h2 id="seal-wizard">Seal wizard<a class="headerlink" href="#seal-wizard" title="Permanent link">⚓︎</a></h2>
 <p>All seal configurations are performed in the wizard. Both the application of new seals as well as the processing and removing are possible. The current state of a seal can also be viewed in an overview, which is accessible via the button in the ribbon. When the seal wizard is opened via the ribbon, the wizard appears in the case of unsealed data sets, which runs in <strong>four steps</strong> through the configuration of the seal.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_1.png"><img alt="picture seal button" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_1.png"><img alt="picture seal button" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_1.png"/></a></p>
 <h2 id="1-apply-seal">1. Apply seal<a class="headerlink" href="#1-apply-seal" title="Permanent link">⚓︎</a></h2>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_2.png"><img alt="picture apply seal" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_2.png"><img alt="picture apply seal" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_2.png"/></a></p>
 <p>All objects that are sealed are displayed at the beginning. Depending on the data record, this can be one object, or several. It is also possible to use existing <a href="/placeholder_link">seal templates</a>. Optionally, you can enter a reason for each seal.</p>
 <h2 id="2-multi-eye-principle">2. Multi-eye principle<a class="headerlink" href="#2-multi-eye-principle" title="Permanent link">⚓︎</a></h2>
 <p>The seal logic is the most basic element of this protective mechanism. Here, you define for which users or roles the record should be sealed or released in the future. All those for whom the record is to be sealed are displayed in red, while all users with the required permissions to issue a release are displayed in blue.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_3.png"><img alt="picture multi-eye principle" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_3.png"><img alt="picture multi-eye principle" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_3.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>All users and roles for which the data set is not sealed and which are not authorized for release are displayed in green. These can use the data record independently of the seal.</p>
 </div>
 <p>To avoid having to perform any configuration manually, roles and users are copied directly from the authorizations of the data record. Compare with the "permissions" for the record (can be viewed via the ribbon).</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_4.png"><img alt="picture example permissions" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_4.png"><img alt="picture example permissions" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_4.png"/></a></p>
 <p>Supervisors should issue the releases for their employees. Therefore, the checkbox also follows the existing authorizations. The following <strong>scheme</strong> is used:</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>All users and roles that have the <strong>authorize permission</strong> to the record are "authorized to issue a release" for the seal by default. All users and roles that do <ins>not</ins> have the <strong>authorize permissions</strong> to the record are copied directly into the "Sealed for" column.</p>
 </div>
 <p>Here is a closer look at the permissions of the role <strong>Administrators</strong> on the record:</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_5.png"><img alt="picture example multi-eye principle" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_5.png"><img alt="picture example multi-eye principle" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_5.png"/></a></p>
 <h2 id="adjusting-the-seal-logic">Adjusting the seal logic<a class="headerlink" href="#adjusting-the-seal-logic" title="Permanent link">⚓︎</a></h2>
 <p>Although standard authorizations are used as a basis for the sealing concept, these can be adapted. The number of releases generally required is as configurable as the required number of releases from a role. In the following example, the seal has been extended so that a total of three release authorizations are required in order to release the seal <strong>(Multi-eye principle)</strong>. The role of the administrators has been marked in the mandatory column. This means that it must grant at least one release. In summary: A total of three releases must be made, whereby the group of administrators must grant at least one release.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_6.png"><img alt="picture edit seal" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_6.png"><img alt="picture edit seal" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_6.png"/></a></p>
 <p>In order to be not only dependent on existing authorizations on the data set, other users can also be added to the seal. The role accounting under "sealed for" has been added below.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_7.png"><img alt="picture advanced settings" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_7.png"><img alt="picture advanced settings" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_7.png"/></a></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>When a role or a user is added to a seal, these users also receive permissions on the record according to the authorization granted in the seal. A role that is added under "Sealed for" receives the <strong>Read permission</strong> on the record. When you add authorization permissions, these will include the <strong>Read</strong>, <strong>Write</strong>, <strong>Delete</strong>, and <strong>Authorize</strong> permission.</p>
@@ -1318,10 +1326,10 @@
 </div>
 <h2 id="3-advanced-settings">3. Advanced settings<a class="headerlink" href="#3-advanced-settings" title="Permanent link">⚓︎</a></h2>
 <p>Advanced seal settings allow you to adjust the multi-eye principle. Both the time validity of a release request as well as a granted release can be configured. Multiple break defines whether after the breaking of a seal by a user, other users may still break it.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_8.png"><img alt="picture advanced settings" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_8.png"><img alt="picture advanced settings" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_8.png"/></a></p>
 <h2 id="4-saving-the-seal">4. Saving the seal<a class="headerlink" href="#4-saving-the-seal" title="Permanent link">⚓︎</a></h2>
 <p>Before closing the wizard, it is possible to save the configuration for later use in the form of a template. <a href="/placeholder_link">Seal templates</a> can be optionally provided with a description for the purpose of overview.</p>
-<p><a class="glightbox" href="/assets/en/permission/protective_mechanisms/seals/seals_9.png"><img alt="picture save seal" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_9.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/permission/protective_mechanisms/seals/seals_9.png"><img alt="picture save seal" loading="lazy" src="/assets/en/permission/protective_mechanisms/seals/seals_9.png"/></a></p>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">⚓︎</a></h2>
 <p>The permissions already present on the data set form the basis for any complex seal configurations. It is freely definable which users have to go through a release mechanism before accessing the password. The roles, which may be granted, are freely definable. An always accessible <a href="/placeholder_link">seal overview</a> allows all authorized persons to view the current state of the seals. The <a href="/placeholder_link">section on the release mechanism</a> describes in detail the individual steps, from the initial release request to the final release.</p>
 <ul>
@@ -1473,5 +1481,5 @@
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

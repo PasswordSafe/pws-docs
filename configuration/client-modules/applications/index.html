@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Applications - Password Safe Documentation</title>
 <link href="../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1229,32 +1237,32 @@
 <h1 id="applications">Applications<a class="headerlink" href="#applications" title="Permanent link">⚓︎</a></h1>
 <h2 id="what-are-applications">What are applications?<a class="headerlink" href="#what-are-applications" title="Permanent link">⚓︎</a></h2>
 <p>Applications can be used to configure automated logins to various systems. Especially when combined with various protective mechanisms, the company benefits in terms of security because complex passwords are automated and entered in the login masks in concealed form. Various types are available, such as Remote Desktop (<strong>RDP</strong>), Secure Shell (<strong>SSH</strong>), general applications (<strong>SSO</strong>) and web applications. The Single Sign On Engine offers countless configuration options to enable automatic logon to almost any kind of software.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_1.png"><img alt="picture applications module" loading="lazy" src="/assets/en/client_modules/applications/applications_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_1.png"><img alt="picture applications module" loading="lazy" src="/assets/en/client_modules/applications/applications_1.png"/></a></p>
 <ul>
 <li>Automatic logins to websites are covered by the <a href="/placeholder_link">SSO agent</a>.</li>
 </ul>
 <h2 id="the-four-types-of-applications">The four types of applications<a class="headerlink" href="#the-four-types-of-applications" title="Permanent link">⚓︎</a></h2>
 <p>Password Safe varies between four different types of applications: RDP, SSH, SSO and web applications.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_2.png"><img alt="picture applications" loading="lazy" src="/assets/en/client_modules/applications/applications_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_2.png"><img alt="picture applications" loading="lazy" src="/assets/en/client_modules/applications/applications_2.png"/></a></p>
 <p>In terms of how they are handled, <strong>RDP and SSH</strong> applications can be covered together. Both types of application can be (optionally) "embedded" in Password Safe. The relevant session then opens in its own tab in the <a href="/placeholder_link">reading pane</a>. All other forms of automatic logins are summarized in the <strong>SSO applications</strong> and <strong>web applications</strong> categories. How exactly these logins are created and used is covered in the <a href="/placeholder_link">next section</a> and in the <a href="/placeholder_link">web applications</a> chapter. They include all forms of Windows login masks and also applications for websites. In contrast to RDP and SSH applications, they cannot be started embedded in Password Safe but are instead opened as usual in their own window. These SSO applications need to be defined in advance. In Password Safe, this is also described as <a href="/placeholder_link">learning the applications</a>. In contrast, RDP and SSH can be both completely defined and also started within Password Safe.</p>
 <h2 id="rdp-and-ssh">RDP and SSH<a class="headerlink" href="#rdp-and-ssh" title="Permanent link">⚓︎</a></h2>
 <p>A new RDP/SSH application can be created via the ribbon or also the context menu that is accessed using the right mouse button. A corresponding form opens in each case where the variables for a connection can be defined.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_3.png"><img alt="picture new rdp applications" loading="lazy" src="/assets/en/client_modules/applications/applications_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_3.png"><img alt="picture new rdp applications" loading="lazy" src="/assets/en/client_modules/applications/applications_3.png"/></a></p>
 <p>These variables also correspond precisely to those (using the example of RDP here) that can be configured when creating an RDP connection via “mstsc”. Whether the connections should be started in a tab, full screen mode or in a window can be defined in the field <strong>"window mode"</strong>.</p>
 <h2 id="working-with-rdp-and-ssh-applications">Working with RDP and SSH applications<a class="headerlink" href="#working-with-rdp-and-ssh-applications" title="Permanent link">⚓︎</a></h2>
 <p>If you have created e.g. an RDP connection, this can now also be directly started via the ribbon. The connection to the desired session can be established via the icon <strong>Establish RDP connection</strong>.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_4.png"><img alt="picture establish rdp connection" loading="lazy" src="/assets/en/client_modules/applications/applications_4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_4.png"><img alt="picture establish rdp connection" loading="lazy" src="/assets/en/client_modules/applications/applications_4.png"/></a></p>
 <p>Password Safe now attempts to log in to the target system with the information available. Data that are not saved in the form will be directly requested when opening the session. It is thus also possible to only enter the IP address and/or the password after starting the Password Safe application. If all data has been retrieved, the RDP session will open in a tab – if so defined (Window mode field in the application):</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_5.png"><img alt="picture rdp session" loading="lazy" src="/assets/en/client_modules/applications/applications_5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_5.png"><img alt="picture rdp session" loading="lazy" src="/assets/en/client_modules/applications/applications_5.png"/></a></p>
 <h2 id="logging-in-via-ssh-certificates">Logging in via SSH certificates<a class="headerlink" href="#logging-in-via-ssh-certificates" title="Permanent link">⚓︎</a></h2>
 <p>It is also possible to complete the authentication process using SSH certificates. For this purpose, the certificate is saved as a document in .ppk format. (It may be necessary to firstly approve this file ending in the settings). The document is then linked to the record via the footer. The record does not need to have a password. However, it is necessary for the record to be linked to a SSH application.</p>
 <h2 id="linking-records-and-applications">Linking records and applications<a class="headerlink" href="#linking-records-and-applications" title="Permanent link">⚓︎</a></h2>
 <p>The application defines the requirements for the desired connection and also optionally for the target system. By linking records with applications, the complete login process can be automated. If the record now also supplies the user name and password, all of the information required for the login is available. Applications and records are linked via the "Start" tab in the ribbon. If this link to a record is established, a 1-click login to the target system is possible.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_6.png"><img alt="picture direct link to rdp" loading="lazy" src="/assets/en/client_modules/applications/applications_6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_6.png"><img alt="picture direct link to rdp" loading="lazy" src="/assets/en/client_modules/applications/applications_6.png"/></a></p>
 <p>The following example illustrates this process using an RDP connection:</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_7.png"><img alt="picture example application" loading="lazy" src="/assets/en/client_modules/applications/applications_7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_7.png"><img alt="picture example application" loading="lazy" src="/assets/en/client_modules/applications/applications_7.png"/></a></p>
 <p>A record can also be linked to multiple target systems in this manner. The user name and record are supplied by the record, while all other information necessary for the login is supplied by the different applications. In the following example, a record (user name and password) is linked to multiple access points.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_8.png"><img alt="picture one password multiple applications diagram" loading="lazy" src="/assets/en/client_modules/applications/applications_8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_8.png"><img alt="picture one password multiple applications diagram" loading="lazy" src="/assets/en/client_modules/applications/applications_8.png"/></a></p>
 <p>This is generally a very common scenario. Nevertheless, it should be noted that accessing multiple servers with one single password is questionable from a security standpoint. It is generally recommended that a unique password is issued for every server/access point.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -1262,7 +1270,7 @@
 </div>
 <p>Alternatively, it is possible to connect several records with one RDP connection.
 In this way, you can combine different users with an RDP connection and register them straightforward.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/applications/applications_9.jpg"><img alt="picture connect several accounts to applications" loading="lazy" src="/assets/en/client_modules/applications/applications_9.jpg"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/applications/applications_9.jpg"><img alt="picture connect several accounts to applications" loading="lazy" src="/assets/en/client_modules/applications/applications_9.jpg"/></a></p>
 <hr/>
 <div class="md-source-file">
 <small>
@@ -1408,5 +1416,5 @@ In this way, you can combine different users with an RDP connection and register
 <script src="../../../js/timeago.min.js"></script>
 <script src="../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

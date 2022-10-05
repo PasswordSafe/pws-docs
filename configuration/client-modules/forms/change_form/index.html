@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
 <link href="../../../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.1" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.1" name="generator"/>
 <title>Change form - Password Safe Documentation</title>
 <link href="../../../../assets/stylesheets/main.2e8b5541.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -19,7 +19,15 @@
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QY3E27F64E"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QY3E27F64E",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QY3E27F64E",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1308,9 +1316,9 @@
 <h1 id="change-form">Change form<a class="headerlink" href="#change-form" title="Permanent link">⚓︎</a></h1>
 <h2 id="changing-forms">Changing forms<a class="headerlink" href="#changing-forms" title="Permanent link">⚓︎</a></h2>
 <p>It is necessary in some cases to change the form for a record. In these cases, this is mostly to consolidate existing data or to adapt the form to match changes in the data structure. These functionalities are available under "Extras/Settings" in the ribbon.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/change_form/change_form_1.png"><img alt="picture change form ribbon" loading="lazy" src="/assets/en/client_modules/forms/change_form/change_form_1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/change_form/change_form_1.png"><img alt="picture change form ribbon" loading="lazy" src="/assets/en/client_modules/forms/change_form/change_form_1.png"/></a></p>
 <p>In the following screenshot, you can see the dialogue for "mapping" the form fields from the previously used form to the new form. In this example, a record that previously belonged to the "Website" form is being "mapped" to the "Password" form (right).</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/change_form/change_form_2.png"><img alt="picture change form" loading="lazy" src="/assets/en/client_modules/forms/change_form/change_form_2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/change_form/change_form_2.png"><img alt="picture change form" loading="lazy" src="/assets/en/client_modules/forms/change_form/change_form_2.png"/></a></p>
 <p>The drop-down menu allows you to select the target form. The comparison of current and new form fields is shown in the lower section.</p>
 <ul>
 <li>Fields <strong>marked in green</strong> have already been assigned to the new form</li>
@@ -1330,7 +1338,7 @@
 <p>In general, changes to forms do not effect existing records. This means that a record that was created with a certain form will not itself be changed after this form has been adapted/changed. It remains in its original state. However, there are methods by which changes to forms could be adopted by existing records. There are two possibilities in this context:</p>
 <h3 id="how-to-change-forms">How to change forms<a class="headerlink" href="#how-to-change-forms" title="Permanent link">⚓︎</a></h3>
 <p>If you press the "Change form" button (as mentioned in the previous section), the already existing form will be used by default. If this form has been changed in the meantime, the new form field will be directly shown and adopted after it is saved.</p>
-<p><a class="glightbox" href="/assets/en/client_modules/forms/change_form/change_form_3.png"><img alt="picture change form new field" loading="lazy" src="/assets/en/client_modules/forms/change_form/change_form_3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/assets/en/client_modules/forms/change_form/change_form_3.png"><img alt="picture change form new field" loading="lazy" src="/assets/en/client_modules/forms/change_form/change_form_3.png"/></a></p>
 <h3 id="apply-form-changes-to-passwords">Apply form changes to passwords<a class="headerlink" href="#apply-form-changes-to-passwords" title="Permanent link">⚓︎</a></h3>
 <p>The setting "Apply form changes to passwords" makes it possible to force the change to the form to be adopted. This becomes effective when editing the record! It is immaterial here whether changes are being made to the record. Simply re-editing and saving the record will cause the adjustment to the form.</p>
 <h3 id="the-following-permissionsconfiguration-must-exist">The following permissions/configuration must exist<a class="headerlink" href="#the-following-permissionsconfiguration-must-exist" title="Permanent link">⚓︎</a></h3>
@@ -1486,5 +1494,5 @@
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>
 <script src="../../../../assets/js/newtab.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>
