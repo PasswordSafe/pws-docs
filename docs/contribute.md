@@ -1,3 +1,7 @@
+---
+glightbox: false
+---
+
 # Contribute
 
 Feel free to contribute by opening a pull request [here]({{config.repo_url}}){target=_blank}
