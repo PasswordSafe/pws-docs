@@ -5,11 +5,11 @@ hide:
 glightbox: false
 ---
 
-# Password Safe documentation
+# Introduction
 
 ![Welcome](/assets/images/start-page.svg){ align=right width=30% loading=lazy }
 
-Welcome to the official {{about.product}} documentation! :man_raising_hand:
+Welcome to the official {{about.fullname}} {{about.legacyname}} documentation! :man_raising_hand:
 
 This documentation is continuous growing due to your help!  
 Feel free to also contribute. Check out [how](/contribute).

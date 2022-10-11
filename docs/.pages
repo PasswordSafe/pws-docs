@@ -1,7 +1,7 @@
 nav:
     - Welcome:
         - index.md
-        - Why Password Safe: why.md
+        - Why Password Secure: why.md
         - editions.md
         - contribute.md
     - installation

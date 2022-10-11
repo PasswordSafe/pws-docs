@@ -1,4 +1,4 @@
-site_name: Password Safe Documentation
+site_name: Password Secure Documentation
 site_author: MATESO GmbH
 repo_url: https://github.com/PasswordSafe/pws-docs
 repo_name: PasswordSafe/pws-docs
@@ -43,12 +43,13 @@ extra:
     link: https://twitter.com/matesogmbh
 
 theme:
-  logo: assets/logo_white.png
-  favicon: assets/favicon.svg
+  logo: assets/logo_white.svg
+  favicon: assets/favicon.ico
   language: en
   name: material
   icon:
     repo: material/file-document-outline
+  custom_dir: overrides
   features:
   - navigation.indexes
   - navigation.instant
@@ -59,6 +60,7 @@ theme:
   - search.highlight
   - search.suggest
   - header.autohide
+  - announce.dismiss
   - toc.autohide
   - content.tabs.link
   - content.code.annotate
@@ -66,15 +68,11 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: pink
       toggle:
         icon: material/weather-night
         name: Switch to light mode

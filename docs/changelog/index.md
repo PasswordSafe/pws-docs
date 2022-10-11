@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to {{about.product}} will be documented here.
+All notable changes to {{about.fullname}} {{about.legacyname}} will be documented here.
 
 ## Currently Supported Versions
 
