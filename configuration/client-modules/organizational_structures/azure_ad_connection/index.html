@@ -6,9 +6,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="MATESO GmbH" name="author"/>
-<link href="../../../../assets/favicon.svg" rel="icon"/>
+<link href="../../../../assets/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.4.0, mkdocs-material-8.5.6" name="generator"/>
-<title>Azure AD connection - Password Safe Documentation</title>
+<title>Azure AD connection - Password Secure Documentation</title>
 <link href="../../../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -28,7 +28,7 @@
             
                 .gscrollbar-fixer { padding-right: 15px; }
                 </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
-<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -39,11 +39,22 @@
         </a>
 </div>
 <div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<button aria-label="Don't show this again" class="md-banner__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+<a href="https://www.passwordsafe.com/en/blog/mateso-netwrix/" style="color: #E9EBFC !important" target="_blank">
+    MATESO is now part of <strong style="color: var(--md-accent-fg-color) !important;">Netwrix</strong>
+</a>
+</div>
+<script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+</aside>
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Password Safe Documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Password Safe Documentation">
-<img alt="logo" src="../../../../assets/logo_white.png"/>
+<a aria-label="Password Secure Documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Password Secure Documentation">
+<img alt="logo" src="../../../../assets/logo_white.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -52,7 +63,7 @@
 <div class="md-header__ellipsis">
 <div class="md-header__topic">
 <span class="md-ellipsis">
-            Password Safe Documentation
+            Password Secure Documentation
           </span>
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
@@ -65,11 +76,11 @@
 </div>
 </div>
 <form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
 </label>
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"></path></svg>
 </label>
@@ -161,10 +172,10 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Password Safe Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Password Safe Documentation">
-<img alt="logo" src="../../../../assets/logo_white.png"/>
+<a aria-label="Password Secure Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Password Secure Documentation">
+<img alt="logo" src="../../../../assets/logo_white.svg"/>
 </a>
-    Password Safe Documentation
+    Password Secure Documentation
   </label>
 <div class="md-nav__source">
 <a class="md-source" data-md-component="source" href="https://github.com/PasswordSafe/pws-docs" title="Go to repository">
@@ -193,7 +204,7 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../why/">
-        Why Password Safe
+        Why Password Secure
       </a>
 </li>
 <li class="md-nav__item">
@@ -577,8 +588,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-an-azure-ad-profile-in-password-safe">
-    Create an Azure AD profile in Password Safe
+<a class="md-nav__link" href="#create-an-azure-ad-profile-in-password-secure">
+    Create an Azure AD profile in Password Secure
   </a>
 </li>
 </ul>
@@ -613,13 +624,13 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-safe-application-server">
-    Which port is used for the SCIM endpoint for provisioning users/groups from Azure AD to Password Safe Application Server?
+<a class="md-nav__link" href="#which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-secure-application-server">
+    Which port is used for the SCIM endpoint for provisioning users/groups from Azure AD to Password Secure Application Server?
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#does-password-safe-azure-ad-connection-support-nested-groups">
-    Does Password Safe Azure AD connection support nested groups?
+<a class="md-nav__link" href="#does-password-secure-azure-ad-connection-support-nested-groups">
+    Does Password Secure Azure AD connection support nested groups?
   </a>
 </li>
 <li class="md-nav__item">
@@ -1301,8 +1312,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-an-azure-ad-profile-in-password-safe">
-    Create an Azure AD profile in Password Safe
+<a class="md-nav__link" href="#create-an-azure-ad-profile-in-password-secure">
+    Create an Azure AD profile in Password Secure
   </a>
 </li>
 </ul>
@@ -1337,13 +1348,13 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-safe-application-server">
-    Which port is used for the SCIM endpoint for provisioning users/groups from Azure AD to Password Safe Application Server?
+<a class="md-nav__link" href="#which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-secure-application-server">
+    Which port is used for the SCIM endpoint for provisioning users/groups from Azure AD to Password Secure Application Server?
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#does-password-safe-azure-ad-connection-support-nested-groups">
-    Does Password Safe Azure AD connection support nested groups?
+<a class="md-nav__link" href="#does-password-secure-azure-ad-connection-support-nested-groups">
+    Does Password Secure Azure AD connection support nested groups?
   </a>
 </li>
 <li class="md-nav__item">
@@ -1363,26 +1374,26 @@
 </a>
 <h1 id="azure-ad-connection">Azure AD connection<a class="headerlink" href="#azure-ad-connection" title="Permanent link">⚓︎</a></h1>
 <h2 id="why-azure-ad">Why Azure AD?<a class="headerlink" href="#why-azure-ad" title="Permanent link">⚓︎</a></h2>
-<p>More and more companies use cloud services. Therefore, also the management of users is outsourced. Instead of a classic Active Directory via LDAP, an Azure AD is used more often. Password Safe integrates the possibility to bring in users and roles from Azure. To use users and roles from multiple Azure ADs, you can create multiple profiles.</p>
+<p>More and more companies use cloud services. Therefore, also the management of users is outsourced. Instead of a classic Active Directory via LDAP, an Azure AD is used more often. Password Secure integrates the possibility to bring in users and roles from Azure. To use users and roles from multiple Azure ADs, you can create multiple profiles.</p>
 <h2 id="differences-to-the-ldap-connection">Differences to the LDAP connection<a class="headerlink" href="#differences-to-the-ldap-connection" title="Permanent link">⚓︎</a></h2>
-<p>The connection to the Azure AD differs in one special point from the connection to a conventional Active Directory. While Password Safe queries the users, groups, and roles actively from the conventional AD, the Azure AD is pushing them automatically to our server. For this a so-called SCIM service is used.</p>
-<p>To login to Password Safe, after entering the username a popup opens for the authentication with the entered Microsoft account. Here, a possible configured second factor is also requested. The authentication is handled via the Open ID Connect protocol.</p>
+<p>The connection to the Azure AD differs in one special point from the connection to a conventional Active Directory. While Password Secure queries the users, groups, and roles actively from the conventional AD, the Azure AD is pushing them automatically to our server. For this a so-called SCIM service is used.</p>
+<p>To login to Password Secure, after entering the username a popup opens for the authentication with the entered Microsoft account. Here, a possible configured second factor is also requested. The authentication is handled via the Open ID Connect protocol.</p>
 <h2 id="linking-azure-ad">Linking Azure AD<a class="headerlink" href="#linking-azure-ad" title="Permanent link">⚓︎</a></h2>
-<p>Below you will find instructions on how to connect Azure AD to Password Safe. In the Azure portal, go to the management page of your Azure Active Directory. Use an account with administrative permissions for this. During this, login to Password Safe with an account that has the user right "Display organizational structure module", "Can manage Azure AD profiles", and "Can create new Azure AD profiles" enabled.</p>
+<p>Below you will find instructions on how to connect Azure AD to Password Secure. In the Azure portal, go to the management page of your Azure Active Directory. Use an account with administrative permissions for this. During this, login to Password Secure with an account that has the user right "Display organizational structure module", "Can manage Azure AD profiles", and "Can create new Azure AD profiles" enabled.</p>
 <h3 id="preparations-in-the-azure-portal">Preparations in the Azure portal<a class="headerlink" href="#preparations-in-the-azure-portal" title="Permanent link">⚓︎</a></h3>
-<p>Note the "Tenant ID" of the Azure AD – you will need this later for the configuration in Password Safe
+<p>Note the "Tenant ID" of the Azure AD – you will need this later for the configuration in Password Secure
 Navigate in your Azure AD to "Enterprise applications"
-Add an own application, that is not listed in the Azure Gallery – in our example, we name it "MATESO GmbH Password Safe"
-<strong>Note:</strong> A key feature of Password Safe is that it is self-hosted by our customers. However, to be listed in Azure Gallery, a SaaS model is required. Therefore, Password Safe is not available in the Azure Gallery.
+Add an own application, that is not listed in the Azure Gallery – in our example, we name it "Netwrix Corporation Password Secure"
+<strong>Note:</strong> A key feature of Password Secure is that it is self-hosted by our customers. However, to be listed in Azure Gallery, a SaaS model is required. Therefore, Password Secure is not available in the Azure Gallery.
 When the application was created successfully, you are redirected to it automatically
 Note the "Application ID" – again, this is needed later
 In the navigation, click "Users and groups"
-Add the Users and groups that should be available in Password Safe
+Add the Users and groups that should be available in Password Secure
 Navigate to the "Provisioning" entry
 Configure the Provisioning Mode to "Automatic"
-Keep the browser tab open and switch to Password Safe
-!The import of Azure groups as Password Safe roles is only possible if you have booked the Azure package Azure AD Premium P2!</p>
-<h3 id="create-an-azure-ad-profile-in-password-safe">Create an Azure AD profile in Password Safe<a class="headerlink" href="#create-an-azure-ad-profile-in-password-safe" title="Permanent link">⚓︎</a></h3>
+Keep the browser tab open and switch to Password Secure
+!The import of Azure groups as Password Secure roles is only possible if you have booked the Azure package Azure AD Premium P2!</p>
+<h3 id="create-an-azure-ad-profile-in-password-secure">Create an Azure AD profile in Password Secure<a class="headerlink" href="#create-an-azure-ad-profile-in-password-secure" title="Permanent link">⚓︎</a></h3>
 <p>Navigate to the module "Organizational structure" or "Roles"
 In the toolbar, click on "Manage profiles" in the category "Azure AD"
 Create the profile with your information
@@ -1392,28 +1403,28 @@ Choose a desired expiration date (max. 10 years) and click "Generate token"
 Note down the values of the fields "Tenant URL" and "Secret Token"
 Switch back to the Azure portal
 Provisioning configuration
-Fill the fields "Tenant URL" and "Secret Token" with the information provided by Password Safe
+Fill the fields "Tenant URL" and "Secret Token" with the information provided by Password Secure
 Click "Test Connection"
 When the test has been successful, click on "Save" at the top of the page
 Back on the "Provisioning" page, click "Start provisioning"
 In the settings of the provisioning, check if "Provisioning Status" is set to "On"
-All allocated users and groups are created in Password Safe now</p>
+All allocated users and groups are created in Password Secure now</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>The default provisioning interval is 40 Minutes. So it may take this amount of time until the users and roles are shown in Password Safe.</p>
+<p>The default provisioning interval is 40 Minutes. So it may take this amount of time until the users and roles are shown in Password Secure.</p>
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Be Aware</p>
-<p>Please note that Azure establishes the connection to Password Safe. For this, the client URL must be accessible from an external network and any used SSL certificate must be valid!</p>
+<p>Please note that Azure establishes the connection to Password Secure. For this, the client URL must be accessible from an external network and any used SSL certificate must be valid!</p>
 </div>
-<p>If the users are not created in Password Safe, see the Azure Enterprise Application Provisioning log for more information.</p>
+<p>If the users are not created in Password Secure, see the Azure Enterprise Application Provisioning log for more information.</p>
 <h2 id="configuration-of-the-login">Configuration of the login<a class="headerlink" href="#configuration-of-the-login" title="Permanent link">⚓︎</a></h2>
 <ol>
-<li>To make sure Azure users are able to log in to Password Safe, a few further configuration steps are required.</li>
+<li>To make sure Azure users are able to log in to Password Secure, a few further configuration steps are required.</li>
 <li>In Azure, navigate to the Overview page of your Azure AD</li>
 <li>Navigate to "App registrations"</li>
 <li>If no application is displayed, click "All applications"</li>
-<li>Click on "MATESO GmbH Password Safe" and navigate to "Authentication"</li>
+<li>Click on "Netwrix Corporation Password Secure" and navigate to "Authentication"</li>
 <li>Click on "Add a platform", select "Mobile and desktop applications" and configure the required URIs</li>
 </ol>
 <table>
@@ -1455,7 +1466,7 @@ All allocated users and groups are created in Password Safe now</p>
 <p>In order for your users to be able to log in to the FullClient on the desktop with the imported users, <a href="https://developer.microsoft.com/de-de/microsoft-edge/webview2/#download-section">WebView2</a> from Microsoft must also be installed on each end device. This is required to be able to display general websites (Azure login page) in the FullClient.</p>
 </div>
 <h3 id="set-api-permissions">Set API permissions<a class="headerlink" href="#set-api-permissions" title="Permanent link">⚓︎</a></h3>
-<p>Finally, the API permissions for the Azure API have to be set, so the login to Password Safe can be performed successfully.</p>
+<p>Finally, the API permissions for the Azure API have to be set, so the login to Password Secure can be performed successfully.</p>
 <ol>
 <li>Navigate to "API permissions" and click "Add a permission"</li>
 <li>Select "Microsoft Graph" and then "Delegated permissions"</li>
@@ -1466,16 +1477,16 @@ All allocated users and groups are created in Password Safe now</p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">⚓︎</a></h2>
 <h3 id="is-it-possible-to-migrate-from-ldap-to-azure-ad">Is it possible to migrate from LDAP to Azure AD?<a class="headerlink" href="#is-it-possible-to-migrate-from-ldap-to-azure-ad" title="Permanent link">⚓︎</a></h3>
 <p>Currently, an automated migration from LDAP users (E2E as well as MasterKey) to Azure AD users is <strong>not possible</strong>!</p>
-<h2 id="which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-safe-application-server">Which port is used for the SCIM endpoint for provisioning users/groups from Azure AD to Password Safe Application Server?<a class="headerlink" href="#which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-safe-application-server" title="Permanent link">⚓︎</a></h2>
-<p>11015 is the port that will be used for the communication from Azure AD to Password Safe.</p>
-<h2 id="does-password-safe-azure-ad-connection-support-nested-groups">Does Password Safe Azure AD connection support nested groups?<a class="headerlink" href="#does-password-safe-azure-ad-connection-support-nested-groups" title="Permanent link">⚓︎</a></h2>
-<p>Due to Azure based technical limitations, Password Safe does not support nested groups.</p>
+<h2 id="which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-secure-application-server">Which port is used for the SCIM endpoint for provisioning users/groups from Azure AD to Password Secure Application Server?<a class="headerlink" href="#which-port-is-used-for-the-scim-endpoint-for-provisioning-usersgroups-from-azure-ad-to-password-secure-application-server" title="Permanent link">⚓︎</a></h2>
+<p>11015 is the port that will be used for the communication from Azure AD to Password Secure.</p>
+<h2 id="does-password-secure-azure-ad-connection-support-nested-groups">Does Password Secure Azure AD connection support nested groups?<a class="headerlink" href="#does-password-secure-azure-ad-connection-support-nested-groups" title="Permanent link">⚓︎</a></h2>
+<p>Due to Azure based technical limitations, Password Secure does not support nested groups.</p>
 <h2 id="does-azure-ad-work-on-servers-that-are-only-available-internally">Does Azure AD work on servers that are only available internally?<a class="headerlink" href="#does-azure-ad-work-on-servers-that-are-only-available-internally" title="Permanent link">⚓︎</a></h2>
 <p>An integration on servers, that are not accessible from external sources, the integration of Azure AD is also possible. For this, you can use the Provisioning Agent. This can be installed on all or only one application server. It must be noted that the IP or DNS name of the "Tenent URL" specified in the subsequently created enterprise application is present in the alternative application names in the server certificate.
 Tip: "<code>https://127.0.0.1:11015/scim</code>" can also be specified as the "Tenent URL", in which case 127.0.0.1 must again be present in the alternative application names in the server certificate.</p>
 <ol>
 <li>Download the Provisioning Agent from <a href="https://aka.ms/OnPremProvisioningAgent">here</a></li>
-<li>Install the Provisioning Agent on the server with the Password Safe Server</li>
+<li>Install the Provisioning Agent on the server with the Password Secure Server</li>
 <li>Start "AAD Connect Provisioning Agent Wizard"</li>
 <li>Select "On-premises application provisioning Azure AD to application", click next</li>
 <li>Click "Authenticate" and authenticate with a user.This user should be a Hybrid administrator or a global administrator.</li>
@@ -1646,7 +1657,7 @@ Tip: "<code>https://127.0.0.1:11015/scim</code>" can also be specified as the "T
 </aside>
 </div>
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);console.log(new FormData(form)),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
-<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.instant", "navigation.top", "search.highlight", "search.suggest", "header.autohide", "toc.autohide", "content.tabs.link", "content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.instant", "navigation.top", "search.highlight", "search.suggest", "header.autohide", "announce.dismiss", "toc.autohide", "content.tabs.link", "content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../../assets/javascripts/bundle.078830c0.min.js"></script>
 <script src="../../../../js/timeago.min.js"></script>
 <script src="../../../../js/timeago_mkdocs_material.js"></script>

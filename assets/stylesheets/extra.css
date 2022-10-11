@@ -1,7 +1,35 @@
+/* Add Netwrix color scheme */
+:root > * {
+    --md-primary-fg-color:        #0068DA; /* nwx-palette.blue.40 */
+    --md-primary-fg-color--light: #429CFF; /* nwx-palette.blue.60 */
+    --md-primary-fg-color--dark:  #0050A8; /* nwx-palette.blue.30 */
+    --md-accent-fg-color:         #D22730; /* nwx-palette.red.brand */
+}
+
+
+/* resize the header logo */
+.md-logo > img {
+    height: 3.6rem !important;
+}
+
+/* style the NPS permission icons */
 .permission-add {
     color: #5e82bd;
 }
 
 .permission-reduce {
     color: #e56565;
+}
+
+/* header in corp colors */
+.md-header {
+    background-color: rgba(255,255,255,0);
+    background-image: radial-gradient(circle at center center, #1a1d5f 20%,#8f014a 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* style announcement banner */
+.md-banner{
+    text-align: center;
 }
