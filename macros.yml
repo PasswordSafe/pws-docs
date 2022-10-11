@@ -6,8 +6,11 @@
 # https://mkdocs-macros-plugin.readthedocs.io/
 
 about:
-  company: MATESO GmbH
-  product: Password Safe
+  company: Netwrix Corporation
+  product: Password Secure
+  fullname: Netwrix Password Secure
+  shortname: NPX
+  legacyname: (formerly Password Safe by MATESO)
 
 url:
   website: https://www.passwordsafe.com/
